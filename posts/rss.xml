@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.0">Jekyll</generator><link href="https://derek.stride.host/posts/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2025-01-27T19:53:56+00:00</updated><id>https://derek.stride.host/posts/rss.xml</id><title type="html">derekstride</title><author><name>derekstride</name></author><entry><title type="html">A Comprehensive Introduction to Tree-sitter</title><link href="https://derek.stride.host/posts/comprehensive-introduction-to-tree-sitter" rel="alternate" type="text/html" title="A Comprehensive Introduction to Tree-sitter" /><published>2021-08-06T00:00:00+00:00</published><updated>2021-08-06T00:00:00+00:00</updated><id>https://derek.stride.host/posts/comprehensive-introduction-to-tree-sitter</id><content type="html" xml:base="https://derek.stride.host/posts/comprehensive-introduction-to-tree-sitter"><![CDATA[<p>Check out the <a href="https://github.com/tree-sitter/tree-sitter">tree-sitter</a> repo on GitHub and their
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.0">Jekyll</generator><link href="https://derek.stride.host/posts/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2025-12-08T16:25:25+00:00</updated><id>https://derek.stride.host/posts/rss.xml</id><title type="html">derekstride</title><author><name>derekstride</name></author><entry><title type="html">My Workflow with AI Agents</title><link href="https://derek.stride.host/posts/my-ai-workflow" rel="alternate" type="text/html" title="My Workflow with AI Agents" /><published>2025-12-05T00:00:00+00:00</published><updated>2025-12-05T00:00:00+00:00</updated><id>https://derek.stride.host/posts/my-ai-workflow</id><content type="html" xml:base="https://derek.stride.host/posts/my-ai-workflow"><![CDATA[<h1 id="my-ai-workflow">My AI Workflow</h1>
+
+<h2 id="system-prompt--history">System Prompt – History</h2>
+
+<p>In Februray 2025, I went on parental leave. At the time, Copilot, ChatGPT, Cursor, &amp; custom built AI workflows using
+your own <code class="language-plaintext highlighter-rouge">TOKEN</code> were the main ways to use generative AI for work. As a neovim user these tools weren’t compelling
+enough. Copilot was a fancy autocomplete, ChatGPT was a more interesting Google Search. Cursor looked nice but wasn’t a
+significant productivity upgrade from my current workflow, not enough to justify the switch anyway.</p>
+
+<p>Building my own workflow seemed like a good idea but would be a huge lift. I also knew that there was a lot of eyes on
+AI and a lot people working to make it easier to leverage. Building my own thing on the side felt like a waste, I either
+had to dedicate a lot of thought &amp; energy to compete with other’s or else wait for something better to come along. I
+also thought that Cursor might improve enough to make the switch worth it.</p>
+
+<p>I came back from leave in September 2025. I followed along what was happening with AI while I was off but didn’t put
+time into playing with it. The development of new AI tools &amp; advancements has been rapid over the past 2 years but
+stepping out of the loop &amp; re-entering 7 months into the future. That’s a <em>stark</em> transition. Agents were the tool I
+didn’t know I needed. It fit near perfectly into my workflow.</p>
+
+<h2 id="tools">Tools</h2>
+
+<p>Prior to agents my workspace setup relied on a a minimal set of tools that I could easily remember &amp; port to other
+workspaces easily.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">tmux</code> – + a custom <code class="language-plaintext highlighter-rouge">mux</code> tool to simplify my common commands</li>
+  <li><code class="language-plaintext highlighter-rouge">neovim</code> – + glue code to send commands to other <code class="language-plaintext highlighter-rouge">tmux</code> panes.</li>
+</ul>
+
+<p>With agents I’ve augmented it with a few more tools but the total set is still quite small.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">claude</code> – + a custom <code class="language-plaintext highlighter-rouge">c</code> tool to control MCP’s on startup with <code class="language-plaintext highlighter-rouge">fzf</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git worktree</code> - + a custom <code class="language-plaintext highlighter-rouge">wt</code> tool to navigate with <code class="language-plaintext highlighter-rouge">fzf</code></li>
+</ul>
+
+<h2 id="prompt--the-workflow">Prompt – The Workflow</h2>
+
+<p>When I want to start on a new piece of work this is what I do</p>
+
+<pre><code class="language-sh-session">$ mux new feature-name  # creates a new tmux window with the name `feature-name`
+$ wt new                # pulls worktree name from tmux window i.e. `feature-name`
+$ mux split             # create 3 tmux panes Left Half for `nvim`, Right Bottom for `claude` &amp; another for a shell 
+</code></pre>
+
+<p>Next, I open <code class="language-plaintext highlighter-rouge">claude</code> (with <code class="language-plaintext highlighter-rouge">c</code>) &amp; <code class="language-plaintext highlighter-rouge">nvim</code>. I use a custom leader command <code class="language-plaintext highlighter-rouge">&lt;leader&gt;&lt;leader&gt; np</code> – <code class="language-plaintext highlighter-rouge">np</code> for <strong>n</strong>otes
+<strong>p</strong>rompts. This opens a new file under <code class="language-plaintext highlighter-rouge">$NOTES/claude/prompts/feature-name.md</code> where <code class="language-plaintext highlighter-rouge">feature-name</code> is the <code class="language-plaintext highlighter-rouge">git
+branch</code> or the current directory name if it’s not a <code class="language-plaintext highlighter-rouge">git</code> project.</p>
+
+<p>At this point I’m ready to go, I have a prompt file and I can send the contents directly to claude with
+<code class="language-plaintext highlighter-rouge">&lt;leader&gt;&lt;leader&gt; c</code>.</p>
+
+<h2 id="reference">Reference</h2>
+
+<p>These are other commands that I use day to day to when resuming past work.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mux new [NAME]          # omitting NAME will open `fzf` with existing worktrees
+wt swtich               # select an existing worktree with `fzf`, this is the default command when run as `wt`
+</code></pre></div></div>
+
+<p>Neovim has a few lua functions that help work with claude &amp; tmux</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;leader&gt;&lt;leader&gt; c      # send full buffer or highlighted region to claude pane
+&lt;leader&gt;&lt;leader&gt; f      # send filepath + line numbers to claude (uses @/file/path syntax) to force claude to read it
+&lt;leader&gt;&lt;leader&gt; fn     # find notes – open fuzzy finder scoped to `$NOTES/` with my claude prompts, commands &amp; agents
+</code></pre></div></div>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[A workspace with simple tools that leverages multiple parallel AI agents.]]></summary></entry><entry><title type="html">A Comprehensive Introduction to Tree-sitter</title><link href="https://derek.stride.host/posts/comprehensive-introduction-to-tree-sitter" rel="alternate" type="text/html" title="A Comprehensive Introduction to Tree-sitter" /><published>2021-08-06T00:00:00+00:00</published><updated>2021-08-06T00:00:00+00:00</updated><id>https://derek.stride.host/posts/comprehensive-introduction-to-tree-sitter</id><content type="html" xml:base="https://derek.stride.host/posts/comprehensive-introduction-to-tree-sitter"><![CDATA[<p>Check out the <a href="https://github.com/tree-sitter/tree-sitter">tree-sitter</a> repo on GitHub and their
 <a href="https://tree-sitter.github.io/tree-sitter/">documentation</a> if you’re unfamiliar with the project. TL;DR from the
 GitHub repo:</p>
 
