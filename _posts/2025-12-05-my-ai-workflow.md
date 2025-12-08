@@ -5,8 +5,6 @@ excerpt: >
   A workspace with simple tools that leverages multiple parallel AI agents.
 ---
 
-# My AI Workflow
-
 ## System Prompt – History
 
 In Februray 2025, I went on parental leave. At the time, Copilot, ChatGPT, Cursor, & custom built AI workflows using
