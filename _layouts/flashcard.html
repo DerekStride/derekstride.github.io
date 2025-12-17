@@ -1,0 +1,12 @@
+---
+layout: default
+nav: Flashcards
+---
+
+<article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+  <h1 class="pt-8">{{ page.title }}</h1>
+  <time datetime="{{ page.date | date_to_xmlschema }}">{{- page.date | date: "%B %-d, %Y" -}}</time>
+  {% if page.description %}<p class="text-gray-600 italic">{{ page.description }}</p>{% endif %}
+  {{- content -}}
+  <hr class="pb-12" />
+</article>

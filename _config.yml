@@ -24,11 +24,17 @@ feed:
 
 exclude:
   - "*.config.js"
+  - "dev.yml"
+  - "CLAUDE.md"
   - "package*.json"
   - "node_modules"
   - "bin"
   - "graphs"
   - "tmp"
+  - "flashcards/sources"
+  - "flashcards/scripts"
+  - "flashcards/cards"
+  - "Makefile"
 
 collections:
   posts:
@@ -38,5 +44,8 @@ collections:
     output: true
     permalink: /:collection/:title
   talks:
+    output: true
+    permalink: /:collection/:title
+  flashcards:
     output: true
     permalink: /:collection/:title

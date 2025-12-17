@@ -25,7 +25,11 @@
   <div class="md:container mx-auto px-8">
     {%- if page.id != "home" -%}
       <nav>
+        {%- if layout.nav -%}
+        <a class="text-xl text-gray-500 hover:text-gray-900" href="/{{ layout.nav | slugify }}">{{ layout.nav }}</a>
+        {%- else -%}
         <a class="text-xl text-gray-500 hover:text-gray-900" href="/">Home</a>
+        {%- endif -%}
       </nav>
     {%- endif -%}
     {{- content -}}
