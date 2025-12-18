@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Napkin Math: Latency</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:site_name" content="derekstride">
+  <meta property="og:description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:title" content="Napkin Math: Latency">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta rel="author" href="derekstride">
+  <meta rel="publisher" href="derekstride">
+
+  <link rel="stylesheet" href="/assets/css/bundle.css" /><link rel="canonical" href="https://derek.stride.host/flashcards/napkin-math-latency" /><link rel="alternate" type="application/rss+xml" title="derekstride" href="/rss.xml">
+</head>
+<body class="py-8">
+  <div class="md:container mx-auto px-8"><nav><a class="text-xl text-gray-500 hover:text-gray-900" href="/flashcards">Flashcards</a></nav><article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+  <h1 class="pt-8">Napkin Math: Latency</h1>
+  <time datetime="2025-12-18T15:05:21+00:00">December 18, 2025</time>
+  <p>C:
+Operation: Sequential Memory R/W (64 bytes)</p>
+
+<p>Latency: [0.5 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Sequential Memory R/W (64 bytes): Single Thread No SIMD</p>
+
+<p>Latency: [0.5 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Sequential Memory R/W (64 bytes): Single Thread SIMD</p>
+
+<p>Latency: [0.5 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Sequential Memory R/W (64 bytes): Threaded No SIMD</p>
+
+<p>Latency: [0.5 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Sequential Memory R/W (64 bytes): Threaded SIMD</p>
+
+<p>Latency: [0.5 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Network Same-Zone</p>
+
+<p>Throughput: [10 GiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Network Same-Zone: Inside VPC</p>
+
+<p>Throughput: [10 GiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Network Same-Zone: Outside VPC</p>
+
+<p>Throughput: [3 GiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Hashing not crypto-safe (64 bytes)</p>
+
+<p>Latency: [25 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Random Memory R/W (64 bytes)</p>
+
+<p>Latency: [50 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Fast Serialization</p>
+
+<p>Throughput: [1 GiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Fast Deserialization</p>
+
+<p>Throughput: [1 GiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: System Call</p>
+
+<p>Latency: [500 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Hashing crypto-safe (64 bytes)</p>
+
+<p>Latency: [100 ns]</p>
+
+<hr />
+
+<p>C:
+Operation: Sequential SSD read (8 KiB)</p>
+
+<p>Latency: [1 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: Context Switch</p>
+
+<p>Latency: [10 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: Sequential SSD write -fsync (8KiB)</p>
+
+<p>Latency: [10 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: TCP Echo Server (32 KiB)</p>
+
+<p>Latency: [10 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: Decompression</p>
+
+<p>Throughput: [1 GiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Compression</p>
+
+<p>Throughput: [500 MiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Sequential SSD write +fsync (8KiB)</p>
+
+<p>Latency: [1 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Sorting (64-bit integers)</p>
+
+<p>Throughput: [200 MiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Sequential HDD Read (8 KiB)</p>
+
+<p>Latency: [10 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Blob Storage GET 1 conn</p>
+
+<p>Latency: [50 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Blob Storage GET n conn (offsets)</p>
+
+<p>Latency: [50 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Blob Storage PUT 1 conn</p>
+
+<p>Latency: [50 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Blob Storage PUT n conn (multipart)</p>
+
+<p>Latency: [150 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Random SSD Read (8 KiB)</p>
+
+<p>Latency: [100 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: Serialization</p>
+
+<p>Throughput: [100 MiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Deserialization</p>
+
+<p>Throughput: [100 MiB/s]</p>
+
+<hr />
+
+<p>C:
+Operation: Proxy: Envoy/ProxySQL/Nginx/HAProxy</p>
+
+<p>Latency: [50 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: Network within same region</p>
+
+<p>Latency: [250 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: Premium network within zone/VPC</p>
+
+<p>Latency: [250 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: MySQL/Memcached/Redis Query</p>
+
+<p>Latency: [500 μs]</p>
+
+<hr />
+
+<p>C:
+Operation: Random HDD Read (8 KiB)</p>
+
+<p>Latency: [10 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Network NA Central &lt;-&gt; East</p>
+
+<p>Latency: [25 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Network NA Central &lt;-&gt; West</p>
+
+<p>Latency: [40 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Network NA East &lt;-&gt; West</p>
+
+<p>Latency: [60 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Network EU West &lt;-&gt; NA East</p>
+
+<p>Latency: [80 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Network EU West &lt;-&gt; NA Central</p>
+
+<p>Latency: [100 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Network NA West &lt;-&gt; Singapore</p>
+
+<p>Latency: [180 ms]</p>
+
+<hr />
+
+<p>C:
+Operation: Network EU West &lt;-&gt; Singapore</p>
+
+<p>Latency: [160 ms]</p>
+<hr class="pb-12" />
+</article>
+</div>
+</body>
+</html>
