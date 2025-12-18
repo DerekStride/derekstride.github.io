@@ -1,0 +1,27 @@
+What,Amount,$/month,1y commit $/month,Spot $/month,Hourly Spot $
+CPU,1,$15,$10,$2,$0.005/hr spot
+GPU,1,$5000,$3000,$1500,$2/hr spot
+Memory,1 GB,$2,$1,$0.2,$0.0005/hr spot
+Warehouse Storage,1 GB,$0.02,,,
+Blob (S3/GCS),1 GB,$0.02,,,
+Zonal HDD,1 GB,$0.05,,,
+Ephemeral SSD,1 GB,$0.08,$0.05,$0.05,$0.07/hr spot
+Regional HDD,1 GB,$0.1,,,
+Zonal SSD,1 GB,$0.2,,,
+Regional SSD,1 GB,$0.35,,,
+Network Same Zone,1 GB,$0,,,
+Network Blob,1 GB,$0,,,
+Network Ingress,1 GB,$0,,,
+Network L4 LB,1 GB,$0.008,,,
+Network Inter-Zone,1 GB,$0.01,,,
+Network Inter-Region,1 GB,$0.02,,,
+Network Internet Egress,1 GB,$0.1,,,
+CDN Egress,1 GB,$0.05,,,
+CDN Fill,1 GB,$0.01,,,
+Warehouse Query,1 GB,$0.005,,,
+Logs/Traces,1 GB,$0.5,,,
+Metrics,1000,$20,,,
+EKM Keys,1,$1,,,
+Blob Reads,1M,$0.4,,,$0.0004/1000
+Blob Writes,1M,$5,,,$0.005/1000
+EKM Encryption,1M,$3,,,$0.003/1000

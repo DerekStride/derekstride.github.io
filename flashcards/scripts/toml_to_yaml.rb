@@ -23,6 +23,6 @@ metadata = TomlRB.parse(toml_frontmatter)
 puts "---"
 puts "layout: flashcard"
 puts "title: \"#{metadata['name'] || 'Flashcards'}\""
-puts "excerpt: \"#{metadata['name'] || 'Flashcards'}\""
+puts "excerpt: \"\""
 puts "---"
 print body
