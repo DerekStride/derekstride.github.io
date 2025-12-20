@@ -1,0 +1,79 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "optparse"
+require "logger"
+require "json"
+require "debug"
+require "net-http"
+
+$stdout.sync = $stderr.sync = true
+def level = ENV.fetch("LOG_LEVEL", Logger::WARN)
+def progname = File.basename($0)
+def logger = @logger ||= Logger.new($stderr, level:, progname:)
+def options = @options ||= {}
+def enoent!(pathname) = logger.error("File not found: #{pathname}") && exit(Errno::ENOENT::Errno)
+
+OptionParser.new do |o|
+  o.accept(Pathname) { Pathname.new(_1) }
+
+  o.banner = "usage: ruby #{progname} [options]"
+  o.on("-v", "--verbose", "Enable verbose logging") { logger.level -= 1 }
+  o.on("-f", "--file=FILE", Pathname, "Path to highlights JSON file") { |file| options[:file] = file.exist? ? file : enoent!(file) }
+  o.on("-t", "--token=TOKEN", String, "Readwise API token (default: ENV['READWISE_TOKEN'])") { |token| options[:token] = token }
+  o.on("-n", "--dry-run", "Print request without sending") { options[:dry_run] = true }
+end.parse!(ARGV, into: options)
+
+options[:token] ||= ENV["READWISE_TOKEN"]
+
+unless options[:file]
+  logger.error("Missing required option: --file")
+  exit(1)
+end
+
+unless options[:token]
+  logger.error("Missing Readwise API token. Set READWISE_TOKEN or use --token")
+  exit(1)
+end
+
+logger.debug("options=#{options.merge(token: "[REDACTED]")}")
+
+READWISE_API_URL = "https://readwise.io/api/v2/highlights/"
+
+def main
+  require "net/http"
+  require "uri"
+
+  highlights = JSON.parse(options[:file].read)
+  logger.info("Loaded #{highlights["highlights"].size} highlights from #{options[:file]}")
+
+  if options[:dry_run]
+    logger.info("Dry run - would POST to #{READWISE_API_URL}")
+    logger.info("Headers: Authorization: Token [REDACTED]")
+    logger.info("Body: #{JSON.pretty_generate(highlights)}")
+    return
+  end
+
+  uri = URI.parse(READWISE_API_URL)
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = true
+
+  request = Net::HTTP::Post.new(uri.request_uri)
+  request["Authorization"] = "Token #{options[:token]}"
+  request["Content-Type"] = "application/json"
+  request.body = JSON.generate(highlights)
+
+  logger.info("POSTing #{highlights["highlights"].size} highlights to Readwise...")
+  response = http.request(request)
+
+  case response
+  when Net::HTTPSuccess
+    logger.info("Success! Response: #{response.body}")
+    puts response.body
+  else
+    logger.error("Failed with status #{response.code}: #{response.body}")
+    exit(1)
+  end
+end
+
+main
