@@ -102,7 +102,10 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.4.0)
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     pp (0.6.3)
@@ -167,6 +170,7 @@ GEM
       racc (~> 1.7)
     tsort (0.2.0)
     unicode-display_width (2.6.0)
+    uri (1.1.1)
     webrick (1.9.2)
 
 PLATFORMS
@@ -195,6 +199,8 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-graphviz-dot
   jekyll-postcss
+  logger
+  net-http
   toml-rb
   webrick
 
@@ -247,7 +253,9 @@ CHECKSUMS
   kramdown-parser-gfm (1.1.0) sha256=fb39745516427d2988543bf01fc4cf0ab1149476382393e0e9c48592f6581729
   liquid (4.0.4) sha256=4fcfebb1a045e47918388dbb7a0925e7c3893e58d2bd6c3b3c73ec17a2d8fdb3
   listen (3.9.0) sha256=db9e4424e0e5834480385197c139cb6b0ae0ef28cc13310cfd1ca78377d59c67
+  logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   mercenary (0.4.0) sha256=b25a1e4a59adca88665e08e24acf0af30da5b5d859f7d8f38fba52c28f405138
+  net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
   pathutil (0.16.2) sha256=e43b74365631cab4f6d5e4228f812927efc9cb2c71e62976edcb252ee948d589
   pp (0.6.3) sha256=2951d514450b93ccfeb1df7d021cae0da16e0a7f95ee1e2273719669d0ab9df6
   prettyprint (0.2.0) sha256=2bc9e15581a94742064a3cc8b0fb9d45aae3d03a1baa6ef80922627a0766f193
@@ -283,6 +291,7 @@ CHECKSUMS
   toml-rb (4.1.0) sha256=14456ec4549e4703881bf04b83a56f3264ef99884880092d83c98a2058d95846
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   unicode-display_width (2.6.0) sha256=12279874bba6d5e4d2728cef814b19197dbb10d7a7837a869bab65da943b7f5a
+  uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
   webrick (1.9.2) sha256=beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131
 
 BUNDLED WITH
