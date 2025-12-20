@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scripty – Share Scripts via GitHub Gists</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:site_name" content="derekstride">
+  <meta property="og:description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:title" content="Scripty – Share Scripts via GitHub Gists">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta rel="author" href="derekstride">
+  <meta rel="publisher" href="derekstride">
+
+  <link rel="stylesheet" href="/assets/css/bundle.css" /><link rel="canonical" href="https://derek.stride.host/ideas/scripty" /><link rel="alternate" type="application/rss+xml" title="derekstride" href="/rss.xml">
+</head>
+<body class="py-8">
+  <div class="md:container mx-auto px-8"><nav><a class="text-xl text-gray-500 hover:text-gray-900" href="/">Home</a></nav><article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+  <h1 class="pt-8">Scripty – Share Scripts via GitHub Gists</h1>
+  <time datetime="2024-04-11T00:00:00+00:00">April 11, 2024</time><p>A tool to share small scripts between teams without the overhead of a dedicated git repo. GitHub Gists as the storage backend gives you versioning, web UI, and collaboration for free.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>Sometimes you have a useful script—a one-off data migration, a build helper, a debugging tool. It’s too small for its own repo, but copy-pasting it around is messy. Email attachments rot. Slack snippets get lost.</p>
+
+<p>Gists are perfect for this, but the workflow is clunky: create gist in browser, copy URL, clone locally, edit, push. Scripty wraps this into simple commands.</p>
+
+<h2 id="commands">Commands</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">scripty share &lt;file&gt;</code></strong> – Upload a local file to a new gist. Returns a shareable URL. Tracks the file→gist mapping in <code class="language-plaintext highlighter-rouge">~/.config/scripty/config.toml</code>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">scripty import &lt;gist-url&gt;</code></strong> – Clone someone else’s gist to your local machine. The gist becomes a local file you can run and edit.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">scripty update</code></strong> – Push local changes back to the gist. If you imported someone else’s script, this forks it to your own gist (you can’t push to theirs).</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">scripty sync</code></strong> – Pull the latest remote changes and merge with your local edits. Git merge semantics—conflicts are possible if both sides changed.</p>
+
+<h2 id="why-gists">Why Gists</h2>
+
+<ul>
+  <li><strong>Versioned</strong> – full git history for every script</li>
+  <li><strong>Web UI</strong> – view, comment, fork in browser</li>
+  <li><strong>API</strong> – GitHub’s gist API is simple and well-documented</li>
+  <li><strong>Free</strong> – unlimited public gists, private gists with GitHub account</li>
+  <li><strong>Familiar</strong> – developers already know gists exist</li>
+</ul>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>Rust CLI using:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">clap</code> for argument parsing</li>
+  <li><code class="language-plaintext highlighter-rouge">reqwest</code> for GitHub API calls</li>
+  <li>Config stored in TOML at <code class="language-plaintext highlighter-rouge">~/.config/scripty/config.toml</code></li>
+</ul>
+
+<p>Each tracked script maps a local filepath to a gist ID. Import clones the gist repo locally. Update/sync use git operations under the hood.</p>
+
+<h2 id="open-questions">Open Questions</h2>
+
+<ul>
+  <li>Multi-file gists? Gists support multiple files, could be useful for script + config pairs</li>
+  <li>Private gists by default? Public is more shareable, private is safer for internal tools</li>
+  <li>Conflict resolution UX? Git conflicts in a single-file context might need special handling</li>
+</ul>
+<hr class="pb-12" />
+</article>
+
+<footer>All of my posts are also available as an <a target="_blank" class="underline" href="/posts/rss.xml">RSS</a> feed.
+
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Serverless Flashcards on Cloudflare</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:site_name" content="derekstride">
+  <meta property="og:description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:title" content="Serverless Flashcards on Cloudflare">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta rel="author" href="derekstride">
+  <meta rel="publisher" href="derekstride">
+
+  <link rel="stylesheet" href="/assets/css/bundle.css" /><link rel="canonical" href="https://derek.stride.host/ideas/cloudflare-flashcards" /><link rel="alternate" type="application/rss+xml" title="derekstride" href="/rss.xml">
+</head>
+<body class="py-8">
+  <div class="md:container mx-auto px-8"><nav><a class="text-xl text-gray-500 hover:text-gray-900" href="/">Home</a></nav><article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+  <h1 class="pt-8">Serverless Flashcards on Cloudflare</h1>
+  <time datetime="2025-12-20T00:00:00+00:00">December 20, 2025</time><p>A flashcard app that runs entirely on Cloudflare’s edge infrastructure. No servers to manage, globally fast, and cards authored as plain text files.</p>
+
+<h2 id="the-stack">The Stack</h2>
+
+<ul>
+  <li><strong>Cloudflare Pages</strong> – serves the static frontend (HTML/CSS/JS)</li>
+  <li><strong>Pages Functions</strong> – server-side logic for drill sessions, spaced repetition scheduling, progress tracking</li>
+  <li><strong>D1</strong> – Cloudflare’s SQLite database stores card progress and review history</li>
+  <li><strong>R2</strong> – object storage for media (images, audio) if cards reference them</li>
+</ul>
+
+<h2 id="why-edge-first">Why Edge-First</h2>
+
+<p>Traditional flashcard apps either run locally (like Anki) or require a backend server. This approach:</p>
+
+<ul>
+  <li>Runs at the edge – low latency anywhere in the world</li>
+  <li>Zero infrastructure – no VPS, no Docker, no maintenance</li>
+  <li>Pay-per-use – essentially free for personal flashcard volumes</li>
+  <li>Cards stay in version control – author with any text editor, track changes with git</li>
+</ul>
+
+<h2 id="the-card-format">The Card Format</h2>
+
+<p>Borrowed from <a href="https://github.com/eudoxia0/hashcards">hashcards</a>, a plain-text spaced repetition system. Cards are written in markdown files using a lightweight notation:</p>
+
+<p><strong>Question/Answer cards:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q: What is the fundamental charge?
+A: The magnitude of the electric charge of a proton or electron (~1.6 × 10⁻¹⁹ C).
+</code></pre></div></div>
+
+<p><strong>Cloze deletion cards:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C: The [mitochondria] is the [powerhouse] of the cell.
+</code></pre></div></div>
+
+<p>Cards are identified by the hash of their content. Edit a card, and it’s treated as a new card (progress resets). This keeps things simple and content-addressable.</p>
+
+<h2 id="what-d1-and-r2-are">What D1 and R2 Are</h2>
+
+<p><strong>D1</strong> is Cloudflare’s managed SQLite database. It uses standard SQLite syntax, runs at the edge, and integrates with Pages Functions. Each database can hold up to 10GB – more than enough for flashcard progress data.</p>
+
+<p><strong>R2</strong> is Cloudflare’s object storage (similar to S3, but with no egress fees). Useful if cards include images or audio files that shouldn’t live in the git repo.</p>
+
+<h2 id="spaced-repetition">Spaced Repetition</h2>
+
+<p>The app would implement <a href="https://github.com/open-spaced-repetition/fsrs4anki">FSRS</a> (Free Spaced Repetition Scheduler), the same algorithm hashcards uses. FSRS is a modern alternative to SM-2, optimizing review intervals based on card difficulty and user performance.</p>
+
+<p>Progress data stored in D1:</p>
+<ul>
+  <li>Card hash (primary key)</li>
+  <li>Stability and difficulty parameters</li>
+  <li>Due date</li>
+  <li>Review count and history</li>
+</ul>
+
+<h2 id="open-questions">Open Questions</h2>
+
+<ul>
+  <li>Authentication – how to identify users? Cloudflare Access? Simple password? Public but isolated by URL?</li>
+  <li>Card sync – should cards be fetched from the repo at build time, or stored in D1/R2?</li>
+  <li>Offline support – service workers for offline drilling, sync when back online?</li>
+</ul>
+<hr class="pb-12" />
+</article>
+
+<footer>All of my posts are also available as an <a target="_blank" class="underline" href="/posts/rss.xml">RSS</a> feed.
+
+</footer>
+</div>
+</body>
+</html>
