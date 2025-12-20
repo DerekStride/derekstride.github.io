@@ -42,3 +42,14 @@ Want to chat? Feel free to [email](mailto:{{- site.data.general.email -}}) me.
 {% endfor %}
 
 [I wrote notes for {{ site.books.size }} books](/books). {% include books-rss.md %}
+
+## Ideas
+
+{% for idea in site.ideas limit: entry_limit -%}
+  [{{ idea.title }}]({{ idea.url }}) <span class="text text-gray-500">({{ idea.date | date: "%Y-%m-%d" }})</span>
+
+
+  {{ idea.excerpt }}
+{% endfor %}
+
+[I documented {{ site.ideas.size }} ideas](/ideas).

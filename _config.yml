@@ -49,3 +49,6 @@ collections:
   flashcards:
     output: true
     permalink: /:collection/:title
+  ideas:
+    output: true
+    permalink: /:collection/:title
