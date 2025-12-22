@@ -205,7 +205,7 @@ for if (let x = 0; x < 5; x++) y()
 ```
 
 {% include figure.html
-  src="/assets/images/graphs/tree-sitter-glr-error-0.svg"
+  src="/assets/images/graphs/tree-sitter-glr-error-1.svg"
   caption="Figure 14: The syntax tree of the for statement showing the location of the invalid `if` keyword."
 %}
 
@@ -214,7 +214,7 @@ for if (x) y()
 ```
 
 {% include figure.html
-  src="/assets/images/graphs/tree-sitter-glr-error-1.svg"
+  src="/assets/images/graphs/tree-sitter-glr-error-0.svg"
   caption="Figure 15: The syntax tree of the if statement showing the location of the invalid “for” keyword."
 %}
 
