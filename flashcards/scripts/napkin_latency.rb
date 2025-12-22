@@ -6,6 +6,14 @@ require 'csv'
 filename = ARGV[0]
 rows = CSV.read(filename, headers: true)
 
+# Output TOML frontmatter
+puts '---'
+puts 'name = "Napkin Math: Latency"'
+puts 'author = "Simon Eskildsen"'
+puts 'source_url = "https://github.com/sirupsen/napkin-math"'
+puts '---'
+puts
+
 first = true
 
 rows.each do |row|
