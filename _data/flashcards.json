@@ -1,0 +1,1952 @@
+{
+  "cards": [
+    {
+      "hash": "019f1919915e11b3d6e716bd6358d5b50dce8a6529501c462b11208442fffbe8",
+      "familyHash": "72aee29ef9d84afaed56da70f8130dce4ba9554f8250b1b2d51e709784e9bc49",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 155,
+        "lineEnd": 160
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Network Inter-Zone (1 GB)\n\n$/month: $0.01",
+          "start": 46,
+          "end": 50
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "05c349a6b11ea44bce8440503f8db7370ecb8b22cebe344991af0ba5a35da2f8",
+      "familyHash": "bf110a10cf479f573db466b4567cfff6f331bfe2e69a3f3f2dd87cc55f722ad8",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 288,
+        "lineEnd": 291
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network EU West <-> Singapore\n\nLatency: 160 ms",
+          "start": 51,
+          "end": 56
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "0ab3116fb29f84b1df2b223c3f18f78f11dcc4c0617ed660797b6ca28e3d4a1d",
+      "familyHash": "5b98818677e5b453f867d33690ce151881b660f7a1b310da22abc9326424d529",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 232,
+        "lineEnd": 235
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: EKM Encryption (1M)\n\n$/month: $3",
+          "start": 40,
+          "end": 41
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "0f9f2654dc8a973c6be6f1bed9de027161cf5cc384bb0c02b90f494d5204d889",
+      "familyHash": "38f95b3ac653952b0d6b6ba96a96583fba11f828e83b13406330567e4f919f3f",
+      "deckName": "Napkin Math: Compression",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-compression.md",
+        "lineStart": 36,
+        "lineEnd": 39
+      },
+      "content": {
+        "cloze": {
+          "text": "Data type: SSL\n\nCompression ratio: -2%",
+          "start": 35,
+          "end": 37
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "108598191d0ad8cb5053f206b9fe9507f33ac25db5bdfebc78f1b3ffca8bc269",
+      "familyHash": "ad51bdfc1f5f42c6967900d630265e6dff21d189814a511647a835df75a4b385",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 204,
+        "lineEnd": 209
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Metrics (1000)\n\n$/month: $20",
+          "start": 35,
+          "end": 37
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "11ea4704046f0a573c777bc2abb3f40fc52cc432ebd02726d01adb6aea0c4fdd",
+      "familyHash": "2a68e8cc8ab244b3eb17f317cd6f8f281ff7b5da8e3ae97d7f04715d0c10c485",
+      "deckName": "Napkin Math: Compression",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-compression.md",
+        "lineStart": 22,
+        "lineEnd": 27
+      },
+      "content": {
+        "cloze": {
+          "text": "Data type: Executables\n\nCompression ratio: 2-3x",
+          "start": 43,
+          "end": 46
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "13f81c9065f7f522b6155f025e62d30964676e886057de77778cf1c24c613c83",
+      "familyHash": "2995c13e10bd0f0f90d8260ad0ad0dee2eb2d6d85e316bba9300b27da560bda0",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 43,
+        "lineEnd": 48
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Memory (1 GB)\n\n$/month: $2",
+          "start": 34,
+          "end": 35
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "14a81e3e5aa4c225e1fe9604ecf1295b7d36f0d19b6d9a362f45fd4b2d97d205",
+      "familyHash": "0ca2ba6ce2c9adc1a748b8b6640892a00153bd1d817b66f3162fcce094f6aff2",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 29,
+        "lineEnd": 34
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `eu-west-1`\n\nLocation: Ireland",
+          "start": 31,
+          "end": 37
+        }
+      },
+      "performance": {
+        "lastReviewedAt": "2025-12-17T13:59:43.102",
+        "stability": 0.164438286289835,
+        "difficulty": 8.082797017759107,
+        "intervalRaw": 0.16443828628983495,
+        "intervalDays": 1,
+        "dueDate": "2025-12-18",
+        "reviewCount": 2
+      }
+    },
+    {
+      "hash": "1642661db2832c5b6a2eae9b59041aa47f14ae3c4c62e06b2aa2c08aeb38bbaf",
+      "familyHash": "105571d549fb055bf54949850a7bb1106884344fb051607167db006a4cf05610",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 134,
+        "lineEnd": 139
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Network Blob (1 GB)\n\n$/month: $0",
+          "start": 40,
+          "end": 41
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "18120f42cac49cb987bc497e8237041983601b19895a1a9fa324132852668188",
+      "familyHash": "d6b810deed4b7d6f0129fbdae167405a36c9f49f5ecb6bb0f51dd9b6d4f77845",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 8,
+        "lineEnd": 13
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `us-east-1`\n\nLocation: Northern Virginia",
+          "start": 8,
+          "end": 18
+        }
+      },
+      "performance": {
+        "lastReviewedAt": "2025-12-17T13:59:38.045",
+        "stability": 0.40255,
+        "difficulty": 7.1949,
+        "intervalRaw": 0.4025499999999999,
+        "intervalDays": 1,
+        "dueDate": "2025-12-18",
+        "reviewCount": 1
+      }
+    },
+    {
+      "hash": "1fd73d0812fb0fff418d0972c9c96dde5505ee24d5d2821fef47d4bdc3f7bac9",
+      "familyHash": "9039c740c5628e3b72afaf6829736ac46abbf3dc6a32327feacd4ac3bed28db4",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 8,
+        "lineEnd": 13
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential Memory R/W (64 bytes): Single Thread No SIMD\n\nLatency: 0.5 ns",
+          "start": 77,
+          "end": 82
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "224c3f159601a93853388e8c0028198531e790103e8a000f06cc1e153c6e11d2",
+      "familyHash": "8733d1935746bdb6152eaf6cb7f3d89fb268810e974c18d3a39b8557cb4edde9",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 183,
+        "lineEnd": 188
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: CDN Fill (1 GB)\n\n$/month: $0.01",
+          "start": 36,
+          "end": 40
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "2260d64345bb068f133976349616da91a1807e7aefad193eb7d57f72d9b37648",
+      "familyHash": "48b5a6421cc704357c16053419ddc2db08136dc937e884fa9e89d80ebb6851f3",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 1,
+        "lineEnd": 6
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential Memory R/W (64 bytes)\n\nLatency: 0.5 ns",
+          "start": 54,
+          "end": 59
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "2274be50cad2b9f5978fff7d4e7bc91c0b0811311d5af26970efe73ae2bc065f",
+      "familyHash": "465c64b4140435f470a958eb1ea399f1d01c404abebb4e9e1d21283d8b3167b8",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 267,
+        "lineEnd": 272
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network EU West <-> NA East\n\nLatency: 80 ms",
+          "start": 49,
+          "end": 53
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "2278be2aa966a96a2851f7e3d09c1615b1d8ca986d791d0b7f5ada1ed2a4576f",
+      "familyHash": "987841f2bcf209ed13519cbdbab93604588b11045ce8c23a1b3a08c7738761cd",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 50,
+        "lineEnd": 55
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network Same-Zone: Outside VPC\n\nThroughput: 3 GiB/s",
+          "start": 55,
+          "end": 61
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "23ec8d091defd1b9e884744dd3c93c9d286742b0426f51b48c287a5b1960c021",
+      "familyHash": "cfe7093f62fc4c5ff5d262ca8dc3f6e503d2b34e85af1d653601a4dc7a81dbae",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 106,
+        "lineEnd": 111
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Regional HDD (1 GB)\n\n$/month: $0.1",
+          "start": 40,
+          "end": 43
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "2aaa011a06834c6add9836fe06dafbc06b1678a02233c579ea3ea6f64313c1ba",
+      "familyHash": "4c0ea142f1a68bd5f94a7f41a14ff5c1d06425a34edfe4794edaa1b1ebf489d9",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 113,
+        "lineEnd": 118
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Zonal SSD (1 GB)\n\n$/month: $0.2",
+          "start": 37,
+          "end": 40
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "2d64368daf24d4be16a20a56d4333bbe5b1abb742672be1fd5c124fd3180ff3f",
+      "familyHash": "6de31d17aff4e09c9a554233aa56bd9d441e29cf6d44d7435e759d1bb3e753c0",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 169,
+        "lineEnd": 174
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Network Internet Egress (1 GB)\n\n$/month: $0.1",
+          "start": 51,
+          "end": 54
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "3276b175ae6e18b6a692c116322e2117c195c5035ef6160175d7e97bd413438c",
+      "familyHash": "c18d51a57aca14ed744d43e384505dac138a5252cf37e39098c85ccb4c55761c",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 253,
+        "lineEnd": 258
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network NA Central <-> West\n\nLatency: 40 ms",
+          "start": 49,
+          "end": 53
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "354ede81a1bafd212d287dfcc259201a9de596297ff03df4adc89dfec6b295ac",
+      "familyHash": "ac5a573ef4267b0ce50ad2ffabe0a3342710917fe954cba0bf4d8ba2206f6916",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 176,
+        "lineEnd": 181
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: CDN Egress (1 GB)\n\n$/month: $0.05",
+          "start": 38,
+          "end": 42
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "36a78c5f7879a4acad6b975d77e4a6a11766f14f176dc38f437c8689b9e4d90d",
+      "familyHash": "ffaf44ba68de7dcdf0de6d78384658588ce13ef6fd35d3b75cda2cfcaa8fb4b5",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 71,
+        "lineEnd": 76
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Blob (S3/GCS) (1 GB)\n\n$/month: $0.02",
+          "start": 41,
+          "end": 45
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "3dc5f636621885e69bc994522900a7679440a768c221a3810e6712afe41b0a41",
+      "familyHash": "4d7f12fd67ff8ca1c2cfa2fe9a83d8c996bf533900cf6692127dc410d4ef9e1c",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 8,
+        "lineEnd": 13
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: CPU (1)\n\n1y commit $/month: $10",
+          "start": 38,
+          "end": 40
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "441391e8f5ce196a0860649c78d0bb033ccc849da2c20e49dbd4bb7f088d221e",
+      "familyHash": "e5752d38505e806c24baf90f5c47fc2126d7bebfdc8d763de6814e1e3680266e",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 64,
+        "lineEnd": 69
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Warehouse Storage (1 GB)\n\n$/month: $0.02",
+          "start": 45,
+          "end": 49
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "450657f619e621d2e7013a8b31e7c63bdd3a760017dc1b763dff16c66f6bac95",
+      "familyHash": "8dd3ed63aa32b48643e583ebebcf33481b88d5a68ff47522cc634bb9466c2cd3",
+      "deckName": "Napkin Math: Compression",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-compression.md",
+        "lineStart": 29,
+        "lineEnd": 34
+      },
+      "content": {
+        "cloze": {
+          "text": "Data type: RPC\n\nCompression ratio: 5-10x",
+          "start": 35,
+          "end": 39
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "46549a842686b81deddada6685fc53f8a949d232909c2fdd269e7385d81b3696",
+      "familyHash": "1e6af9cd204ca8bf0b956488db45990aa78ccad6ec91c94093ca90813b6933c8",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 15,
+        "lineEnd": 20
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `us-west-1`\n\nLocation: Northern California",
+          "start": 31,
+          "end": 49
+        }
+      },
+      "performance": {
+        "lastReviewedAt": "2025-12-18T09:57:17.330",
+        "stability": 0.26194202215244605,
+        "difficulty": 8.082797017759107,
+        "intervalRaw": 0.261942022152446,
+        "intervalDays": 1,
+        "dueDate": "2025-12-19",
+        "reviewCount": 2
+      }
+    },
+    {
+      "hash": "46f0d6ccee1126048548e79c50140b3e91011c773e8d160f19e2f61f4eb08424",
+      "familyHash": "2a62e7df6936ef880d1c9883aa0325ca012fd5a8fdf3360e054c7f7fef15b1bc",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 120,
+        "lineEnd": 125
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: TCP Echo Server (32 KiB)\n\nLatency: 10 μs",
+          "start": 46,
+          "end": 51
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "47645ee18fdf9be8fd6f2c7efa81875182a935fcca48560dac3c77ef21a2d208",
+      "familyHash": "f5b9ab4cfc43cb2ba6f2c198701eaec7b926d6bfb3ac99e53d7d058152c54669",
+      "deckName": "Napkin Math: Compression",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-compression.md",
+        "lineStart": 8,
+        "lineEnd": 13
+      },
+      "content": {
+        "cloze": {
+          "text": "Data type: English\n\nCompression ratio: 2-4x",
+          "start": 39,
+          "end": 42
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "47c000d4c406a18fe705267f3d7519f85636456b60cb3a0e34211c46e790cea4",
+      "familyHash": "0007e8991e2e2e788f2668b5ed5caaf42350864130754506d4e5e62f047583cf",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 148,
+        "lineEnd": 153
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sorting (64-bit integers)\n\nThroughput: 200 MiB/s",
+          "start": 50,
+          "end": 58
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "4896f2eed6fb596fd5a58051fed3629bf0feb78e1c9c5dd34387a5a350062f1b",
+      "familyHash": "ab0213cda711044f738d8402c15960ff091369451734f07bc0805697e9696a29",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 211,
+        "lineEnd": 216
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Proxy: Envoy/ProxySQL/Nginx/HAProxy\n\nLatency: 50 μs",
+          "start": 57,
+          "end": 62
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "49ee9a4185c03fcaf91fae747b6c02a7c18f4fc44a53a87819351ad6968d1028",
+      "familyHash": "0ca2ba6ce2c9adc1a748b8b6640892a00153bd1d817b66f3162fcce094f6aff2",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 29,
+        "lineEnd": 34
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `eu-west-1`\n\nLocation: Ireland",
+          "start": 8,
+          "end": 18
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "4ac3bd0ea1aa313e5d8faffb8315c075fe1c51685927fd5a6da962ee026fdf5b",
+      "familyHash": "e227ed0cd8776143513111c87e7acb3f250c7f1680f2d141a194de9bb4b52818",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 22,
+        "lineEnd": 27
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential Memory R/W (64 bytes): Threaded No SIMD\n\nLatency: 0.5 ns",
+          "start": 72,
+          "end": 77
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "54f805b9fc5eda34ee3c1858c1c4020ed7781fd93a4d021f22be23d2f5c66641",
+      "familyHash": "70090d08512a74b36850b26eb5bd128d39ea01d08460973bf95539dc933626be",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 204,
+        "lineEnd": 209
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Deserialization\n\nThroughput: 100 MiB/s",
+          "start": 40,
+          "end": 48
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "5502befe0e3cb3ac59b7e23d711003427c15c947199ea580dc1dad0cc59537df",
+      "familyHash": "8d16bc0a37c82ac672f1af064fcfde879d518c8361f7035666f78c568da8676a",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 127,
+        "lineEnd": 132
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Decompression\n\nThroughput: 1 GiB/s",
+          "start": 38,
+          "end": 44
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "5672d14f096246ea6f03716f0e558f913b671ad2e0787d4a3660206a550f540e",
+      "familyHash": "b52c4b7550b47548f7e3628b03b6984de828219f55f3782be26c61233a4d54b5",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 127,
+        "lineEnd": 132
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Network Same Zone (1 GB)\n\n$/month: $0",
+          "start": 45,
+          "end": 46
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "5bb0f1eb8df6cea544ff5a7fde17d8650be856533dfc8e4a4b537e342b3bfe4b",
+      "familyHash": "80aeec882d2c0537b02ae8e7ca635b48e2bc42b87843976cfb847128977eafb3",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 15,
+        "lineEnd": 20
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: CPU (1)\n\nSpot $/month: $2",
+          "start": 33,
+          "end": 34
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "5db72070b41991e769c7779e85cfefd004046cf288e58dd2f815ef30396cd173",
+      "familyHash": "af5ca916477a9e6bad6eef8d7af1ae3a0993e72c0549fe614b353444f1529f76",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 197,
+        "lineEnd": 202
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Serialization\n\nThroughput: 100 MiB/s",
+          "start": 38,
+          "end": 46
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "5e4889ff4094f7f9e403d3636af324dd9d17ef118d51fb21d9061421f0a287ea",
+      "familyHash": "6f769f180213f853911db45550ee48603b2654df1797e7d9e8eb61d44da5101a",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 141,
+        "lineEnd": 146
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Network Ingress (1 GB)\n\n$/month: $0",
+          "start": 43,
+          "end": 44
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "620a6ffdb3a180ce37cb3d7a162f742e5923c998f835e52063325505f8189248",
+      "familyHash": "d637a4b0eafbf34ffeeb9b804670c9ea1fce3a926d32dcef943ab9da22204dc2",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 15,
+        "lineEnd": 20
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential Memory R/W (64 bytes): Single Thread SIMD\n\nLatency: 0.5 ns",
+          "start": 74,
+          "end": 79
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "626e465708c42950a2b9e907d64d680fb5102b4c135304ba51ed7d1f9a850530",
+      "familyHash": "dcb9d9e3c643d02af0075f408273d9e06a96c989235b170c3534022371a57b26",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 169,
+        "lineEnd": 174
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Blob Storage GET n conn (offsets)\n\nLatency: 50 ms",
+          "start": 55,
+          "end": 59
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "6957a09c0d2fb5b73fe231ffd3e7195f779bdb0a7fa0f7223e0e5bb65ecc98e7",
+      "familyHash": "17f066f5190b0a929e2aed752715df931cd76feee79c2bc483f8f958e03e3927",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 36,
+        "lineEnd": 41
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network Same-Zone\n\nThroughput: 10 GiB/s",
+          "start": 42,
+          "end": 49
+        }
+      },
+      "performance": {
+        "lastReviewedAt": "2025-12-18T16:48:31.714",
+        "stability": 0.40255,
+        "difficulty": 7.1949,
+        "intervalRaw": 0.4025499999999999,
+        "intervalDays": 1,
+        "dueDate": "2025-12-19",
+        "reviewCount": 1
+      }
+    },
+    {
+      "hash": "6e70e8b7cc75340d873b7cae3824cc1713c086e58c668bcf8ec9824a2776cb80",
+      "familyHash": "e2f06e63df343bea54b25f50225400d879fb04a60d4eb8a7c6390908f44e3705",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 134,
+        "lineEnd": 139
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Compression\n\nThroughput: 500 MiB/s",
+          "start": 36,
+          "end": 44
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "715ed60158afd58962abaea6c8178a25b575c34f326af44b6df8196b53c3edc0",
+      "familyHash": "b5cd36f5b7f6410412117b71ca63ddfd10fc44734950f258ae782b0f9be940b0",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 246,
+        "lineEnd": 251
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network NA Central <-> East\n\nLatency: 25 ms",
+          "start": 49,
+          "end": 53
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "734d378e71cb5684048fef3a16926af5a9bacea14ed3ddfaa36e4a4e8ac001cf",
+      "familyHash": "ac2131958406f7f09a3f6c401b10d6ca4cbe829805c0bf303489cfec09ab7db7",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 1,
+        "lineEnd": 6
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: CPU (1)\n\n$/month: $15",
+          "start": 28,
+          "end": 30
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "7adb9e05319375b1d036453732c16b8ce95d9f8c66ded764810745ea3023ed07",
+      "familyHash": "70fe5535cfd3395dd20f22076ebddf3ea0b3f63cbf1fc45b6d52e17693f2611f",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 85,
+        "lineEnd": 90
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: System Call\n\nLatency: 500 ns",
+          "start": 33,
+          "end": 38
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "7edfb7728a37e89e6344dfe2bbc3c8a83c3d6cb001b4a7f67c4591cd2ea72695",
+      "familyHash": "22bfeb0bf3c9b5d67174b84dd77c9c292cb5089e73e78b7d94cf3bd32eaea6ba",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 1,
+        "lineEnd": 6
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `us-east-2`\n\nLocation: Ohio",
+          "start": 8,
+          "end": 18
+        }
+      },
+      "performance": {
+        "lastReviewedAt": "2025-12-18T09:56:48.654",
+        "stability": 0.26194202215244605,
+        "difficulty": 8.082797017759107,
+        "intervalRaw": 0.261942022152446,
+        "intervalDays": 1,
+        "dueDate": "2025-12-19",
+        "reviewCount": 2
+      }
+    },
+    {
+      "hash": "7f06897f82adcab77f187942bf8ed71d2ac7c2f0ef7005623103a04406265629",
+      "familyHash": "cb3321aaca2b673b3bd5023841e7dfb35c30f2b145888753b59374aa16d271d0",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 92,
+        "lineEnd": 97
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Hashing crypto-safe (64 bytes)\n\nLatency: 100 ns",
+          "start": 52,
+          "end": 57
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "85c83e93f89dbcc1e651b4205d1165f70404ca6cf162bb0c7d1b59f25c2614d2",
+      "familyHash": "1edbbfb4c4bbb92fb0759d2b342a309f690ba57f2fa710424202c315b164cd8e",
+      "deckName": "Napkin Math: Compression",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-compression.md",
+        "lineStart": 15,
+        "lineEnd": 20
+      },
+      "content": {
+        "cloze": {
+          "text": "Data type: Source Code\n\nCompression ratio: 2-4x",
+          "start": 43,
+          "end": 46
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "86ceedc7ffecc22baf4ccb42ec4bfd492e465fa02f4cf07dafe000c1f3055b5b",
+      "familyHash": "218337a19bebf3d62ff218422a46c34a7fd4bef5bbc01dea08f3a52cea227d19",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 22,
+        "lineEnd": 27
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `us-west-2`\n\nLocation: Oregon",
+          "start": 31,
+          "end": 36
+        }
+      },
+      "performance": {
+        "lastReviewedAt": "2025-12-17T13:59:35.905",
+        "stability": 0.40255,
+        "difficulty": 7.1949,
+        "intervalRaw": 0.4025499999999999,
+        "intervalDays": 1,
+        "dueDate": "2025-12-18",
+        "reviewCount": 1
+      }
+    },
+    {
+      "hash": "89bcbaeaa79207caec52215a0626d373a01a42b58c5cdeb0bd9f27a9e3a7f1cf",
+      "familyHash": "dbfb01e68cfe3418c794daa5d2d9d0eb7c5c414d38aaeada8f4144bca43de078",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 232,
+        "lineEnd": 237
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: MySQL/Memcached/Redis Query\n\nLatency: 500 μs",
+          "start": 49,
+          "end": 55
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "8fee1b79d2715a047b739e801c59817ed210a986bb4a591a5989446862e8cc29",
+      "familyHash": "b21ed399f1e995eeeba4c56fa7f2c9ae266083ce48140fb16bafa61ddf2388a4",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 120,
+        "lineEnd": 125
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Regional SSD (1 GB)\n\n$/month: $0.35",
+          "start": 40,
+          "end": 44
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "92da56addf80e7b1a98adc0f8535d3c3d7f290d4d0860b3d78e44670881146ca",
+      "familyHash": "558396563ceb2c7d16caadac34a90c737c4181e57cf8564a4cb2a18c275bfbed",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 274,
+        "lineEnd": 279
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network EU West <-> NA Central\n\nLatency: 100 ms",
+          "start": 52,
+          "end": 57
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "9718c197e3cbbe01e650a9173f93b38a9ba70876f771dccc5620f884a559e96e",
+      "familyHash": "1d2eb96682509defc16f3747c78fb8a7115a02cf98e9e0fdbe954bb653d65f11",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 36,
+        "lineEnd": 39
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `eu-west-2`\n\nLocation: London",
+          "start": 31,
+          "end": 36
+        }
+      },
+      "performance": {
+        "lastReviewedAt": "2025-12-17T13:59:41.256",
+        "stability": 0.40255,
+        "difficulty": 7.1949,
+        "intervalRaw": 0.4025499999999999,
+        "intervalDays": 1,
+        "dueDate": "2025-12-18",
+        "reviewCount": 1
+      }
+    },
+    {
+      "hash": "9855b7d0f46896114b51c0f8b7f40167666c8ce8515bbe76eaf15449ce610cd2",
+      "familyHash": null,
+      "deckName": "Calculus",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/calculus.md",
+        "lineStart": 7,
+        "lineEnd": 9
+      },
+      "content": {
+        "basic": {
+          "question": "Evaluate: $$\\frac{d}{dx}~ \\cos(x)$$",
+          "answer": "$$-\\sin(x)$$"
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "9868d034a735d88f8284c06a92c3af2a764dc213c5e292b302a2b0eafc111d94",
+      "familyHash": "ed4d59f9933895681997192ddabfa0492e3ba7f6e32b448458c416b9590c40ae",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 176,
+        "lineEnd": 181
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Blob Storage PUT 1 conn\n\nLatency: 50 ms",
+          "start": 45,
+          "end": 49
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "98f70fc44ce611844a2ccd1e84f67d8be8e1a11e23ad1f83da299930de1d3b84",
+      "familyHash": "f89ae7b1b2805c3332c59bc19f44081d47c92d94aea1977de235416ae68035b9",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 183,
+        "lineEnd": 188
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Blob Storage PUT n conn (multipart)\n\nLatency: 150 ms",
+          "start": 57,
+          "end": 62
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "9a6c647802e61390bf9b811d2dd21fff319556bd1d385bb988d55255d2e77bee",
+      "familyHash": "66ba3fb0fb7ab15c4052c088fe11307cb409b963bcf880c5c7506146e87cec96",
+      "deckName": "Napkin Math: Compression",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-compression.md",
+        "lineStart": 1,
+        "lineEnd": 6
+      },
+      "content": {
+        "cloze": {
+          "text": "Data type: HTML\n\nCompression ratio: 2-3x",
+          "start": 36,
+          "end": 39
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "9bbd3e56e1c24222c9287b78d38ee4cdf18314846370167adce75b00947feca6",
+      "familyHash": "aec2a3971b5c5a9850b2c71795ea2febb656424969f1b57194ff84964ad166e5",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 57,
+        "lineEnd": 62
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Hashing not crypto-safe (64 bytes)\n\nLatency: 25 ns",
+          "start": 56,
+          "end": 60
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "9f0371679732bd4c801b22ba6ac2a01c353e10128925e7eaddf0f25f472dadc6",
+      "familyHash": "56ed8099935e0da02f47d420620ce892751d0d34c47ac291048af113109dcd56",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 113,
+        "lineEnd": 118
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential SSD write -fsync (8KiB)\n\nLatency: 10 μs",
+          "start": 56,
+          "end": 61
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "a4bf630100a872fc37014872f488a732079986f97a0b2312c18afc3e5b2a7d02",
+      "familyHash": "c35f9dbe3dbe4e3121faf910478891dfa142ccf5c9d20b81d34b4ac843ff7ee6",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 92,
+        "lineEnd": 97
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Ephemeral SSD (1 GB)\n\n1y commit $/month: $0.05",
+          "start": 51,
+          "end": 55
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "b14ddc10716eb7d6333195f9d4fa8cf0817e39caa71c512e0fb8af9bfac97978",
+      "familyHash": "9d4469d45c144ff8db933abae65c4d781b6f67ffcae6f5a01794398b22abd0df",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 260,
+        "lineEnd": 265
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network NA East <-> West\n\nLatency: 60 ms",
+          "start": 46,
+          "end": 50
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "b582bc22c414c611196533cd73759cd8966a280855753967c337afb0ea89fd2d",
+      "familyHash": "c5fdb9f502ffdc1f3cf243a1fa758975177421d0658cd64cfed7bf4d3c98401b",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 99,
+        "lineEnd": 104
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential SSD read (8 KiB)\n\nLatency: 1 μs",
+          "start": 49,
+          "end": 53
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "b923bd18e07326c691f84871e358852f6db1467b59eec1256347365a9c350ee5",
+      "familyHash": "1f6be80d2285670af288827a32a68dc6ccf14941fa707e30fb6be75381f105a6",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 239,
+        "lineEnd": 244
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Random HDD Read (8 KiB)\n\nLatency: 10 ms",
+          "start": 45,
+          "end": 49
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "b93f2061cb4042dbd0dd01655107454910ef3e5b6e7036073f4c48ace728d2a4",
+      "familyHash": "1e6af9cd204ca8bf0b956488db45990aa78ccad6ec91c94093ca90813b6933c8",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 15,
+        "lineEnd": 20
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `us-west-1`\n\nLocation: Northern California",
+          "start": 8,
+          "end": 18
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "bf7681029add665d94343f06e1008367679aa8781ed1e3cb76e83aa13d0320a9",
+      "familyHash": "88f898ebb2b30a8f5cfdecd656b10c6c2ff081fc76b53264992555858c2281b3",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 155,
+        "lineEnd": 160
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential HDD Read (8 KiB)\n\nLatency: 10 ms",
+          "start": 49,
+          "end": 53
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "c0fea33c94df46cc31634d628c8298d6b174b54c12397dc90a58dd2c24644b87",
+      "familyHash": "4196aaee465de78a880d7ee080281634c691a5f22ae7e9e946205cdebf21247e",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 64,
+        "lineEnd": 69
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Random Memory R/W (64 bytes)\n\nLatency: 50 ns",
+          "start": 50,
+          "end": 54
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "c5f77d0155b03401b6a88986087d6ef6475a045a845b5e69d2061b237f7e28b9",
+      "familyHash": "7eb8c2e5e816a5db338d36c64f0ea0405acca83d219a6e545e2824af096e49fe",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 190,
+        "lineEnd": 195
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Random SSD Read (8 KiB)\n\nLatency: 100 μs",
+          "start": 45,
+          "end": 51
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "c6e2bf172a3daf9cb70fb97a5d1a74d8fa1600dae3260b3dbb561c662d63dc20",
+      "familyHash": "127100be8f2cc82362c394a24b0214bcbeab556be81b989a3f02b3e12000b0c2",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 57,
+        "lineEnd": 62
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Memory (1 GB)\n\nSpot $/month: $0.2",
+          "start": 39,
+          "end": 42
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "ca0838aeab459e332e28ec700cf99bb83e5299914c068e43897d949b243511c0",
+      "familyHash": "0cade5103f0c6a24b0c5e976ae9eb287d3bc94699df6f5cf9f82c52ad6c3f894",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 99,
+        "lineEnd": 104
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Ephemeral SSD (1 GB)\n\nSpot $/month: $0.05",
+          "start": 46,
+          "end": 50
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "cc9e8610d3b90b10850fa8184e36f93557bef59f72d14bc111494b8806619e74",
+      "familyHash": "727e174379438377286e07eae1f50f2bf27b69fef530ca756b854fd3eaa8fb04",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 225,
+        "lineEnd": 230
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Premium network within zone/VPC\n\nLatency: 250 μs",
+          "start": 53,
+          "end": 59
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "d17d68acfc526b721aa6ff21144a3efb70f932ccb87abc11e7583f30db5eb060",
+      "familyHash": "4fed0e8200f51fdd3681486c76881db236dd026dcc183b3ec8a35c90d9af36f5",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 29,
+        "lineEnd": 34
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: GPU (1)\n\n1y commit $/month: $3000",
+          "start": 38,
+          "end": 42
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "d22265bb58c12179edf343ddac8822a6859b8bc30238a8cca11037ace4c351e0",
+      "familyHash": "3dc6d59790f421c79882cee35b8b82d1ad0daa4c6c98077cd4fb1dc2e565adda",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 106,
+        "lineEnd": 111
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Context Switch\n\nLatency: 10 μs",
+          "start": 36,
+          "end": 41
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "d61ca7020f9857a4566b007edfde96a050eaed9078938be6c7af4d1e1b97a900",
+      "familyHash": "e1c12dd070184fa61f908cb03555d53afbfdf31784013e4b882161463ccaa4ad",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 218,
+        "lineEnd": 223
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network within same region\n\nLatency: 250 μs",
+          "start": 48,
+          "end": 54
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "d87e6fd20a2edd44d2d0b41af7c2797be2735c4b49289b62f78a45df09646dab",
+      "familyHash": "50aef891aa0262c30d47dd746cc210cc51513a4ddfb654834aea5bfae6a7f058",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 71,
+        "lineEnd": 76
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Fast Serialization\n\nThroughput: 1 GiB/s",
+          "start": 43,
+          "end": 49
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "d96fd83ee518b302d331b733272e43f6cf402f8931290d98ae241eb5dc1ffa16",
+      "familyHash": "1d2eb96682509defc16f3747c78fb8a7115a02cf98e9e0fdbe954bb653d65f11",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 36,
+        "lineEnd": 39
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `eu-west-2`\n\nLocation: London",
+          "start": 8,
+          "end": 18
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "dfb25fc53a961b20199d49d1867e985c10a678bb6baca6e14d8b36011f947e40",
+      "familyHash": "b37e0ca3395217a5107eaa6a2f1e6ab0663c8f8cdd2f3763272c36313e437df2",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 162,
+        "lineEnd": 167
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Network Inter-Region (1 GB)\n\n$/month: $0.02",
+          "start": 48,
+          "end": 52
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "e267545f33b2a3219d6a5d489ed821e750b3959cdc87e6e5e309ac088bc2d1ff",
+      "familyHash": "d6b810deed4b7d6f0129fbdae167405a36c9f49f5ecb6bb0f51dd9b6d4f77845",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 8,
+        "lineEnd": 13
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `us-east-1`\n\nLocation: Northern Virginia",
+          "start": 31,
+          "end": 47
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "e379598ac5d6f99a2b2e2707dd35a916a44226ff1839bffc13a06cbb71645fe2",
+      "familyHash": "5c96ac7dd16e89f9ce83b8334abec0720e58476252178e9bdb4b54cd609e06f0",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 78,
+        "lineEnd": 83
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Fast Deserialization\n\nThroughput: 1 GiB/s",
+          "start": 45,
+          "end": 51
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "e38f6ff77bf869583ffef4343526f7cbd976b12b14af1f35e1e46cd54bc53c3c",
+      "familyHash": "d9cc601ab8eadc943f2008e33455c11ea55ef3d0d0998ee29abaa92bde737646",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 197,
+        "lineEnd": 202
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Logs/Traces (1 GB)\n\n$/month: $0.5",
+          "start": 39,
+          "end": 42
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "e5cadf6bf61a6e3ff33399434c62d724a7a79c10fb414634360aa492f7fdca6d",
+      "familyHash": "4237fb497065ff5348442d5832d091893f0d5074d18790ea02dc53bbfa889f23",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 281,
+        "lineEnd": 286
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network NA West <-> Singapore\n\nLatency: 180 ms",
+          "start": 51,
+          "end": 56
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "e64f3410488c9cb9a78a37d19f9bdcc3ed53a9a579ae9ce85eaaa6d6f65ff02c",
+      "familyHash": "218337a19bebf3d62ff218422a46c34a7fd4bef5bbc01dea08f3a52cea227d19",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 22,
+        "lineEnd": 27
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `us-west-2`\n\nLocation: Oregon",
+          "start": 8,
+          "end": 18
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "e6dbdd4612af4e090756e64399ea4897d23d987e7ece848e8df763138de53f89",
+      "familyHash": "4d38be18b0c955beb8ff12bcf625567dbb2c9de6bc9922a74bb8be3aec1de7d1",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 85,
+        "lineEnd": 90
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Ephemeral SSD (1 GB)\n\n$/month: $0.08",
+          "start": 41,
+          "end": 45
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "e7e4b0fdf52794b68b27d24bd7be2c66dfa90bc210647c0db87a79cc1e88ffb9",
+      "familyHash": "5a5d46a70d7b4419c9d41f28e63eed49e1bed37bc9ea5487c2b2864f285bb7a7",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 141,
+        "lineEnd": 146
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential SSD write +fsync (8KiB)\n\nLatency: 1 ms",
+          "start": 56,
+          "end": 59
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "e9bc8af35edc32013aaee394c0af23ccae3bd96a9e0a13b483537a5ba88bdfcf",
+      "familyHash": "918311e8f7f9409dd4794c0ec688f5ba1e6e3b2e0c8fda761805354021261486",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 162,
+        "lineEnd": 167
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Blob Storage GET 1 conn\n\nLatency: 50 ms",
+          "start": 45,
+          "end": 49
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "ea80e15f471aba5554d40d38ade7d7d24d36735574bb935ffd18f24c7ee93c1d",
+      "familyHash": null,
+      "deckName": "Calculus",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/calculus.md",
+        "lineStart": 1,
+        "lineEnd": 5
+      },
+      "content": {
+        "basic": {
+          "question": "Evaluate: $$\\frac{d}{dx}~ \\sin(x)$$",
+          "answer": "$$\\cos(x)$$"
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "eb4270901e82abfbfee73dd6cb59c3f4490bbc9c75d4ef58dd703339e7ff9190",
+      "familyHash": "46406e3ad32e6a9a945f839c48455837a8409a2cd0cd12b1a5285579ca38788e",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 190,
+        "lineEnd": 195
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Warehouse Query (1 GB)\n\n$/month: $0.005",
+          "start": 43,
+          "end": 48
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "ebacef5bc55f8021a6a1883f7731898d583acd8fb13b0161da2cf8eed2766e06",
+      "familyHash": "3a5ab0d2b07aadf2a2f8ef8a5d3c3422e34e8fec815f7d27150f60e1aae7850f",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 50,
+        "lineEnd": 55
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Memory (1 GB)\n\n1y commit $/month: $1",
+          "start": 44,
+          "end": 45
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "ecb95cfe4e74d7be523a77713c12e0fb1a2c738ad180b4f9f5e66b92e99d8e88",
+      "familyHash": "729ca5b4295185b26b9b92e28d6f17530da8b18ecbe43e6a5c91752e983a960c",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 43,
+        "lineEnd": 48
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Network Same-Zone: Inside VPC\n\nThroughput: 10 GiB/s",
+          "start": 54,
+          "end": 61
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "eeacb72427e75b51feb78cd242ec9aa89d00ccda398dcc6fa1f2fc1ecb4badbf",
+      "familyHash": "b17e05f646534dfa94ba2419fcec6dc387019918d3ef24decf8fb26f1412b2f0",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 148,
+        "lineEnd": 153
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Network L4 LB (1 GB)\n\n$/month: $0.008",
+          "start": 41,
+          "end": 46
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "efa7f9e525cd9f6ab2a07d4327e898189ebf9e721424dd48db83a77f20026259",
+      "familyHash": "9cdf4d8465440b923c1edd07c97c73f6902c8ae179f5f47423e83e3db1b390a5",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 22,
+        "lineEnd": 27
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: GPU (1)\n\n$/month: $5000",
+          "start": 28,
+          "end": 32
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "effddbade07f80e4ac3bdbca0ac92868207db34742e4640eeb8131a81b04d45e",
+      "familyHash": "22bfeb0bf3c9b5d67174b84dd77c9c292cb5089e73e78b7d94cf3bd32eaea6ba",
+      "deckName": "AWS Regions",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/aws-regions.md",
+        "lineStart": 1,
+        "lineEnd": 6
+      },
+      "content": {
+        "cloze": {
+          "text": "Region: `us-east-2`\n\nLocation: Ohio",
+          "start": 31,
+          "end": 34
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "f096c0bc6fe0a3ef79c1a978a74ece3b52e2bc8070f51a30ad5b1cd920a5111d",
+      "familyHash": "f6b000d3287ea728a595792bc3f27278456bcfa770cf9e007920ff513691ddca",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 218,
+        "lineEnd": 223
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Blob Reads (1M)\n\n$/month: $0.4",
+          "start": 36,
+          "end": 39
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "f0bb5db07b93943b4e1f5192d14e0dd8fbca8d77de108a95d424d487ea536daa",
+      "familyHash": "1db30593d63d5e289fdf9a638388f1f8a78e6204c0ffebc4e12c7e355c5101f7",
+      "deckName": "Napkin Math: Latency",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-latency.md",
+        "lineStart": 29,
+        "lineEnd": 34
+      },
+      "content": {
+        "cloze": {
+          "text": "Operation: Sequential Memory R/W (64 bytes): Threaded SIMD\n\nLatency: 0.5 ns",
+          "start": 69,
+          "end": 74
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "f2bf2d1a7f23929ad629bd0e29c79afa829166ec4363de0b40eedeffa72f63a9",
+      "familyHash": "493e15cf9f894720b6d4605aa5dc0ace26de1b2a1c28e812802a88791eaace2a",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 225,
+        "lineEnd": 230
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Blob Writes (1M)\n\n$/month: $5",
+          "start": 37,
+          "end": 38
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "febca8e26ebe2e25fbf95e06fa16c3138953ae5ecf84ed6ddc34c98043a8ccfa",
+      "familyHash": "23edfd1c0e0ac199171b466afe346cbeddfcf238d4832ca589f23f917059326e",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 36,
+        "lineEnd": 41
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: GPU (1)\n\nSpot $/month: $1500",
+          "start": 33,
+          "end": 37
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "ff50aa7474b122dc75574da869fc7c8fcbb6531f38af56c60ffc77e6bee04f06",
+      "familyHash": "b0fda6477fea09e942d63de545da1f059f48a628c41de0fab5a4a6ee9dd86eaf",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 78,
+        "lineEnd": 83
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: Zonal HDD (1 GB)\n\n$/month: $0.05",
+          "start": 37,
+          "end": 41
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "ffcc0f9b8476ea764b1a573f8de5eb39c44742c8a0b85662efc9eba6eeb9e6f7",
+      "familyHash": "01110bb0fb4691112b2b61e195a79bd27887d06fbf8b438af46adf861840922c",
+      "deckName": "Napkin Math: Cost",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/napkin-math-cost.md",
+        "lineStart": 211,
+        "lineEnd": 216
+      },
+      "content": {
+        "cloze": {
+          "text": "Resource: EKM Keys (1)\n\n$/month: $1",
+          "start": 33,
+          "end": 34
+        }
+      },
+      "performance": null
+    }
+  ],
+  "sessions": [
+    {
+      "sessionId": 1,
+      "startedAt": "2025-12-17T13:59:14.710",
+      "endedAt": "2025-12-17T13:59:46.211",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "hash": "14a81e3e5aa4c225e1fe9604ecf1295b7d36f0d19b6d9a362f45fd4b2d97d205",
+          "reviewedAt": "2025-12-17T13:59:26.059",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-18"
+        },
+        {
+          "reviewId": 2,
+          "hash": "46549a842686b81deddada6685fc53f8a949d232909c2fdd269e7385d81b3696",
+          "reviewedAt": "2025-12-17T13:59:32.382",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-18"
+        },
+        {
+          "reviewId": 3,
+          "hash": "86ceedc7ffecc22baf4ccb42ec4bfd492e465fa02f4cf07dafe000c1f3055b5b",
+          "reviewedAt": "2025-12-17T13:59:35.905",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-18"
+        },
+        {
+          "reviewId": 4,
+          "hash": "18120f42cac49cb987bc497e8237041983601b19895a1a9fa324132852668188",
+          "reviewedAt": "2025-12-17T13:59:38.045",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-18"
+        },
+        {
+          "reviewId": 5,
+          "hash": "7edfb7728a37e89e6344dfe2bbc3c8a83c3d6cb001b4a7f67c4591cd2ea72695",
+          "reviewedAt": "2025-12-17T13:59:39.791",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-18"
+        },
+        {
+          "reviewId": 6,
+          "hash": "9718c197e3cbbe01e650a9173f93b38a9ba70876f771dccc5620f884a559e96e",
+          "reviewedAt": "2025-12-17T13:59:41.256",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-18"
+        },
+        {
+          "reviewId": 7,
+          "hash": "14a81e3e5aa4c225e1fe9604ecf1295b7d36f0d19b6d9a362f45fd4b2d97d205",
+          "reviewedAt": "2025-12-17T13:59:43.102",
+          "grade": "Forgot",
+          "stability": 0.164438286289835,
+          "difficulty": 8.082797017759107,
+          "intervalRaw": 0.16443828628983495,
+          "intervalDays": 1,
+          "dueDate": "2025-12-18"
+        }
+      ]
+    },
+    {
+      "sessionId": 2,
+      "startedAt": "2025-12-18T09:56:43.610",
+      "endedAt": "2025-12-18T09:57:20.602",
+      "reviews": [
+        {
+          "reviewId": 8,
+          "hash": "7edfb7728a37e89e6344dfe2bbc3c8a83c3d6cb001b4a7f67c4591cd2ea72695",
+          "reviewedAt": "2025-12-18T09:56:48.654",
+          "grade": "Forgot",
+          "stability": 0.26194202215244605,
+          "difficulty": 8.082797017759107,
+          "intervalRaw": 0.261942022152446,
+          "intervalDays": 1,
+          "dueDate": "2025-12-19"
+        },
+        {
+          "reviewId": 9,
+          "hash": "8e50ecb4a17dcb12e3f2baad8e606169ac662f1da483e2ef5cecaa47c0625eeb",
+          "reviewedAt": "2025-12-18T09:56:58.376",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-19"
+        },
+        {
+          "reviewId": 10,
+          "hash": "57a7698636e6c9d8a916e5075bddf2531fbfd06dbcdd77269071e395add15b23",
+          "reviewedAt": "2025-12-18T09:57:03.722",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-19"
+        },
+        {
+          "reviewId": 11,
+          "hash": "24bc232921a5dc603dfa233315d0b70d2b2f2f023b7e54dfe8b9e4b4dba20c84",
+          "reviewedAt": "2025-12-18T09:57:09.855",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-19"
+        },
+        {
+          "reviewId": 12,
+          "hash": "46549a842686b81deddada6685fc53f8a949d232909c2fdd269e7385d81b3696",
+          "reviewedAt": "2025-12-18T09:57:17.330",
+          "grade": "Forgot",
+          "stability": 0.26194202215244605,
+          "difficulty": 8.082797017759107,
+          "intervalRaw": 0.261942022152446,
+          "intervalDays": 1,
+          "dueDate": "2025-12-19"
+        }
+      ]
+    },
+    {
+      "sessionId": 3,
+      "startedAt": "2025-12-18T16:47:11.112",
+      "endedAt": "2025-12-18T16:48:32.780",
+      "reviews": [
+        {
+          "reviewId": 13,
+          "hash": "6957a09c0d2fb5b73fe231ffd3e7195f779bdb0a7fa0f7223e0e5bb65ecc98e7",
+          "reviewedAt": "2025-12-18T16:48:31.714",
+          "grade": "Forgot",
+          "stability": 0.40255,
+          "difficulty": 7.1949,
+          "intervalRaw": 0.4025499999999999,
+          "intervalDays": 1,
+          "dueDate": "2025-12-19"
+        }
+      ]
+    }
+  ]
+}

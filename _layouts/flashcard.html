@@ -3,10 +3,66 @@ layout: default
 nav: Flashcards
 ---
 
-<article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+<article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none">
   <h1 class="pt-8">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}">{{- page.date | date: "%B %-d, %Y" -}}</time>
   {% if page.description %}<p class="text-gray-600 italic">{{ page.description }}</p>{% endif %}
-  {{- content -}}
-  <hr class="pb-12" />
+
+  <div class="flashcard-deck space-y-4 mt-8">
+    {% assign deck_cards = site.data.flashcards.cards | where: "deckName", page.title %}
+    {% for card in deck_cards %}
+      {% if card.content.cloze %}
+        {% assign text = card.content.cloze.text %}
+        {% assign start = card.content.cloze.start %}
+        {% assign cloze_end = card.content.cloze.end %}
+        {% assign before = text | slice: 0, start %}
+        {% assign cloze_length = cloze_end | minus: start %}
+        {% assign hidden = text | slice: start, cloze_length %}
+        {% assign after = text | slice: cloze_end, 1000 %}
+
+        <div class="flashcard border border-gray-200 rounded-lg p-4 bg-white shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent">{{ before }}<span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1 rounded">{{ hidden }}</span>{{ after }}</pre>
+        </div>
+
+      {% elsif card.content.basic %}
+        <div class="flashcard border border-gray-200 rounded-lg p-4 bg-white shadow-sm"
+             data-controller="flashcard">
+          <div class="question font-medium mb-3">
+            {{ card.content.basic.question | markdownify }}
+          </div>
+          <button data-flashcard-target="button"
+                  data-action="click->flashcard#showAnswer"
+                  class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors text-sm">
+            Show Answer
+          </button>
+          <div data-flashcard-target="answer" class="hidden mt-3 pt-3 border-t border-gray-200">
+            {{ card.content.basic.answer | markdownify }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <hr class="pb-12 mt-8" />
 </article>
+
+<script type="module" src="/assets/js/application.js"></script>
+
+<style>
+  .cloze-hidden {
+    background-color: #1f2937;
+    color: #1f2937;
+    transition: all 0.2s ease;
+  }
+  .cloze-hidden:hover {
+    background-color: #374151;
+    color: #374151;
+  }
+  .cloze-revealed {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+</style>
