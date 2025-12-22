@@ -43,26 +43,14 @@ $(AWS_CARDS): $(AWS_SRC) $(VOCAB_RB)
 
 $(NAPKIN_LATENCY_CARDS): $(NAPKIN_LATENCY_SRC) $(NAPKIN_LATENCY_RB)
 	@mkdir -p flashcards/cards
-	@echo '---' > $@
-	@echo 'name = "Napkin Math: Latency"' >> $@
-	@echo '---' >> $@
-	@echo '' >> $@
 	ruby $(NAPKIN_LATENCY_RB) $(NAPKIN_LATENCY_SRC) >> $@
 
 $(NAPKIN_COST_CARDS): $(NAPKIN_COST_SRC) $(NAPKIN_COST_RB)
 	@mkdir -p flashcards/cards
-	@echo '---' > $@
-	@echo 'name = "Napkin Math: Cost"' >> $@
-	@echo '---' >> $@
-	@echo '' >> $@
 	ruby $(NAPKIN_COST_RB) $(NAPKIN_COST_SRC) >> $@
 
 $(NAPKIN_COMPRESSION_CARDS): $(NAPKIN_COMPRESSION_SRC) $(NAPKIN_COMPRESSION_RB)
 	@mkdir -p flashcards/cards
-	@echo '---' > $@
-	@echo 'name = "Napkin Math: Compression"' >> $@
-	@echo '---' >> $@
-	@echo '' >> $@
 	ruby $(NAPKIN_COMPRESSION_RB) $(NAPKIN_COMPRESSION_SRC) >> $@
 
 # Step 2: Convert TOML cards to Jekyll YAML

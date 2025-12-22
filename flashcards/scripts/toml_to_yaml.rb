@@ -10,10 +10,8 @@ content = File.read(filename)
 if content.start_with?("---\n")
   parts = content.split("---\n", 3)
   toml_frontmatter = parts[1]
-  body = parts[2]
 else
   toml_frontmatter = ""
-  body = content
 end
 
 # Parse TOML frontmatter
@@ -23,6 +21,7 @@ metadata = TomlRB.parse(toml_frontmatter)
 puts "---"
 puts "layout: flashcard"
 puts "title: \"#{metadata['name'] || 'Flashcards'}\""
-puts "excerpt: \"\""
+metadata.except("name").each do |key, value|
+  puts "#{key}: \"#{value}\""
+end
 puts "---"
-print body
