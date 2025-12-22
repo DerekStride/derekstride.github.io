@@ -96,9 +96,6 @@ def card_to_highlight(card, timestamps)
   if fm["tags"]&.any?
     fm["tags"].each { |tag| note_parts << ".#{tag}" }
   end
-  if content["cloze"]
-    note_parts << "cloze: [#{content["cloze"]["start"]}-#{content["cloze"]["end"]}]"
-  end
   note = note_parts.join("\n")
 
   hash = card["hash"]
