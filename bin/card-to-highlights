@@ -6,6 +6,7 @@ require "logger"
 require "json"
 require "debug"
 require "sqlite3"
+require "toml-rb"
 
 $stdout.sync = $stderr.sync = true
 def level = ENV.fetch("LOG_LEVEL", Logger::WARN)
@@ -45,6 +46,36 @@ ensure
   db&.close
 end
 
+# Parse TOML frontmatter from a markdown file
+# Returns hash with keys: author, source_url, image_url, tags
+def parse_frontmatter(file_path)
+  return {} unless File.exist?(file_path)
+
+  content = File.read(file_path)
+  return {} unless content.start_with?("---")
+
+  # Extract frontmatter between first --- and second ---
+  parts = content.split("---", 3)
+  return {} if parts.length < 3
+
+  toml_content = parts[1].strip
+  return {} if toml_content.empty?
+
+  TomlRB.parse(toml_content)
+rescue TomlRB::ParseError => e
+  logger.warn("Failed to parse frontmatter from #{file_path}: #{e.message}")
+  {}
+end
+
+# Cache frontmatter by file path
+def frontmatter_cache
+  @frontmatter_cache ||= {}
+end
+
+def get_frontmatter(file_path)
+  frontmatter_cache[file_path] ||= parse_frontmatter(file_path)
+end
+
 def card_to_highlight(card, timestamps)
   content = card["content"]
   text = if content["cloze"]
@@ -56,7 +87,15 @@ def card_to_highlight(card, timestamps)
     return nil
   end
 
+  # Get frontmatter from source file
+  file_path = card.dig("location", "filePath")
+  fm = file_path ? get_frontmatter(file_path) : {}
+
+  # Build note with tags
   note_parts = [".hashcard"]
+  if fm["tags"]&.any?
+    fm["tags"].each { |tag| note_parts << ".#{tag}" }
+  end
   if content["cloze"]
     note_parts << "cloze: [#{content["cloze"]["start"]}-#{content["cloze"]["end"]}]"
   end
@@ -68,10 +107,12 @@ def card_to_highlight(card, timestamps)
   {
     text: text,
     title: card["deckName"],
-    author: DEFAULT_AUTHOR,
+    author: fm["author"] || DEFAULT_AUTHOR,
     source_type: "hashcards#sync#derek",
     category: "articles",
     note: note,
+    source_url: fm["source_url"],
+    image_url: fm["image_url"],
     highlighted_at: highlighted_at,
     highlight_url: "hashcards://#{hash}"
   }.compact
@@ -86,6 +127,7 @@ def main
 
   highlights = hashcards["cards"].filter_map { |card| card_to_highlight(card, timestamps) }
   logger.info("Converted #{highlights.size} highlights")
+  logger.info("Parsed frontmatter from #{frontmatter_cache.size} files")
 
   output = JSON.pretty_generate({ highlights: highlights })
 
