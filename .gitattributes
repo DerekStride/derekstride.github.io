@@ -1,3 +1,4 @@
-
 # Use bd merge for beads JSONL files
 .beads/issues.jsonl merge=beads
+_data/flashcards.json linguist-generated
+_flashcards/** linguist-generated
