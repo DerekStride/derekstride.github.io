@@ -80,8 +80,8 @@ def card_to_highlight(card, timestamps)
   content = card["content"]
   text = if content["cloze"]
     content["cloze"]["text"]
-  elsif content["frontBack"]
-    "Q: #{content["frontBack"]["front"]}\nA: #{content["frontBack"]["back"]}"
+  elsif content["basic"]
+    "Q: #{content["basic"]["question"]}\nA: #{content["basic"]["answer"]}"
   else
     logger.warn("Unknown card content type: #{content.keys}")
     return nil
