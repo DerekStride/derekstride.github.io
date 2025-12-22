@@ -5,6 +5,7 @@ require "optparse"
 require "logger"
 require "json"
 require "debug"
+require "sqlite3"
 
 $stdout.sync = $stderr.sync = true
 def level = ENV.fetch("LOG_LEVEL", Logger::WARN)
@@ -13,6 +14,9 @@ def logger = @logger ||= Logger.new($stderr, level:, progname:)
 def options = @options ||= {}
 def enoent!(pathname) = logger.error("File not found: #{pathname}") && exit(Errno::ENOENT::Errno)
 
+DEFAULT_AUTHOR = "Derek Stride"
+DEFAULT_DB_PATH = "flashcards/cards/hashcards.db"
+
 OptionParser.new do |o|
   o.accept(Pathname) { Pathname.new(_1) }
 
@@ -20,13 +24,28 @@ OptionParser.new do |o|
   o.on("-v", "--verbose", "Enable verbose logging") { logger.level -= 1 }
   o.on("-f", "--file=FILE", Pathname, "Path to hashcards JSON file (default: tmp/hashcards.json)") { |file| options[:file] = file.exist? ? file : enoent!(file) }
   o.on("-o", "--output=FILE", Pathname, "Path to output highlights JSON file (default: stdout)") { |file| options[:output] = file }
+  o.on("-d", "--db=FILE", Pathname, "Path to hashcards SQLite database (default: #{DEFAULT_DB_PATH})") { |file| options[:db] = file.exist? ? file : enoent!(file) }
 end.parse!(ARGV, into: options)
 
 options[:file] ||= Pathname.new("tmp/hashcards.json").then { _1.exist? ? _1 : enoent!(_1) }
+options[:db] ||= Pathname.new(DEFAULT_DB_PATH).then { _1.exist? ? _1 : nil }
 
 logger.debug("options=#{options}")
 
-def card_to_highlight(card)
+def load_added_at_timestamps(db_path)
+  return {} unless db_path&.exist?
+
+  db = SQLite3::Database.new(db_path.to_s)
+  results = db.execute("SELECT card_hash, added_at FROM cards")
+  results.to_h { |row| [row[0], row[1]] }
+rescue SQLite3::Exception => e
+  logger.warn("Failed to load timestamps from database: #{e.message}")
+  {}
+ensure
+  db&.close
+end
+
+def card_to_highlight(card, timestamps)
   content = card["content"]
   text = if content["cloze"]
     content["cloze"]["text"]
@@ -37,19 +56,24 @@ def card_to_highlight(card)
     return nil
   end
 
-  note = if content["cloze"]
-    "cloze: [#{content["cloze"]["start"]}-#{content["cloze"]["end"]}]"
-  else
-    nil
+  note_parts = [".hashcard"]
+  if content["cloze"]
+    note_parts << "cloze: [#{content["cloze"]["start"]}-#{content["cloze"]["end"]}]"
   end
+  note = note_parts.join("\n")
+
+  hash = card["hash"]
+  highlighted_at = timestamps[hash]
 
   {
     text: text,
     title: card["deckName"],
-    source_type: "hashcards",
-    category: "books",
+    author: DEFAULT_AUTHOR,
+    source_type: "hashcards#sync#derek",
+    category: "articles",
     note: note,
-    highlight_url: "hashcards://#{card["hash"]}"
+    highlighted_at: highlighted_at,
+    highlight_url: "hashcards://#{hash}"
   }.compact
 end
 
@@ -57,7 +81,10 @@ def main
   hashcards = JSON.parse(options[:file].read)
   logger.info("Loaded #{hashcards["cards"].size} cards from #{options[:file]}")
 
-  highlights = hashcards["cards"].filter_map { |card| card_to_highlight(card) }
+  timestamps = load_added_at_timestamps(options[:db])
+  logger.info("Loaded #{timestamps.size} timestamps from database") if timestamps.any?
+
+  highlights = hashcards["cards"].filter_map { |card| card_to_highlight(card, timestamps) }
   logger.info("Converted #{highlights.size} highlights")
 
   output = JSON.pretty_generate({ highlights: highlights })

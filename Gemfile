@@ -14,4 +14,5 @@ group :development do
   gem "net-http"
   gem "logger"
   gem "toml-rb"
+  gem "sqlite3"
 end
