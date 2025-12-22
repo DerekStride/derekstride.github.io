@@ -7,7 +7,7 @@ nav: Flashcards
   <h1 class="pt-8">{{ page.title }}</h1>
   {% if page.description %}<p class="text-gray-600 italic">{{ page.description }}</p>{% endif %}
 
-  <div class="flashcard-deck space-y-4 mt-8">
+  <div class="flashcard-deck space-y-6 mt-8">
     {% assign deck_cards = site.data.flashcards.cards | where: "deckName", page.title %}
     {% for card in deck_cards %}
       {% if card.content.cloze %}
@@ -20,26 +20,27 @@ nav: Flashcards
         {% assign after_start = cloze_end | plus: 1 %}
         {% assign after = text | slice: after_start, 1000 %}
 
-        <div class="flashcard border border-gray-200 rounded-lg p-4 bg-white shadow-sm"
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
              data-controller="flashcard">
-          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent">{{ before }}<span
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">{{ before }}<span
             data-flashcard-target="cloze"
             data-action="click->flashcard#reveal"
-            class="cloze-hidden cursor-pointer px-1 rounded">{{ hidden }}</span>{{ after }}</pre>
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">{{ hidden }}</span>{{ after }}</pre>
         </div>
 
       {% elsif card.content.basic %}
-        <div class="flashcard border border-gray-200 rounded-lg p-4 bg-white shadow-sm"
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
              data-controller="flashcard">
-          <div class="question font-medium mb-3">
+          <div class="question text-lg font-semibold text-gray-900 mb-4 leading-7">
             {{ card.content.basic.question | markdownify }}
           </div>
           <button data-flashcard-target="button"
                   data-action="click->flashcard#showAnswer"
-                  class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors text-sm">
+                  class="inline-flex items-center px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none transition-colors shadow-sm">
             Show Answer
+            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
           </button>
-          <div data-flashcard-target="answer" class="hidden mt-3 pt-3 border-t border-gray-200">
+          <div data-flashcard-target="answer" class="hidden mt-4 pt-4 border-t border-gray-300 text-gray-700">
             {{ card.content.basic.answer | markdownify }}
           </div>
         </div>
@@ -54,16 +55,19 @@ nav: Flashcards
 
 <style>
   .cloze-hidden {
-    background-color: #1f2937;
-    color: #1f2937;
-    transition: all 0.2s ease;
-  }
-  .cloze-hidden:hover {
     background-color: #374151;
     color: #374151;
+    transition: all 0.2s ease;
+    border: 1px solid #4b5563;
+  }
+  .cloze-hidden:hover {
+    background-color: #4b5563;
+    color: #4b5563;
+    border-color: #6b7280;
   }
   .cloze-revealed {
-    background-color: #d1fae5;
-    color: #065f46;
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
   }
 </style>
