@@ -24,10 +24,11 @@ NAPKIN_COMPRESSION_JEKYLL := _flashcards/napkin-math-compression.md
 
 CARDS_TARGETS := $(AWS_CARDS) $(NAPKIN_LATENCY_CARDS) $(NAPKIN_COST_CARDS) $(NAPKIN_COMPRESSION_CARDS)
 JEKYLL_TARGETS := $(AWS_JEKYLL) $(NAPKIN_LATENCY_JEKYLL) $(NAPKIN_COST_JEKYLL) $(NAPKIN_COMPRESSION_JEKYLL)
+FLASHCARDS_JSON := _data/flashcards.json
 
 .PHONY: all clean drill
 
-all: $(CARDS_TARGETS) $(JEKYLL_TARGETS)
+all: $(CARDS_TARGETS) $(JEKYLL_TARGETS) $(FLASHCARDS_JSON)
 
 drill: $(CARDS_TARGETS)
 	hashcards drill flashcards/cards --card-limit=50
@@ -70,5 +71,10 @@ $(NAPKIN_COMPRESSION_JEKYLL): $(NAPKIN_COMPRESSION_CARDS) $(TOML_TO_YAML_RB)
 	@mkdir -p _flashcards
 	ruby $(TOML_TO_YAML_RB) $< > $@
 
+# Step 3: Export card data to JSON for Jekyll
+$(FLASHCARDS_JSON): $(CARDS_TARGETS)
+	@mkdir -p _data
+	hashcards export flashcards/cards --output $@
+
 clean:
-	rm -f $(CARDS_TARGETS) $(JEKYLL_TARGETS)
+	rm -f $(CARDS_TARGETS) $(JEKYLL_TARGETS) $(FLASHCARDS_JSON)
