@@ -72,8 +72,10 @@ $(NAPKIN_COMPRESSION_JEKYLL): $(NAPKIN_COMPRESSION_CARDS) $(TOML_TO_YAML_RB)
 	ruby $(TOML_TO_YAML_RB) $< > $@
 
 # Step 3: Export card data to JSON for Jekyll
+# Run drill briefly to seed added_at timestamps, then export
 $(FLASHCARDS_JSON): $(CARDS_TARGETS)
 	@mkdir -p _data
+	timeout 1s hashcards drill --open-browser false flashcards/cards || true
 	hashcards export flashcards/cards --output $@
 
 clean:
