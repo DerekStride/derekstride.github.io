@@ -15,9 +15,10 @@ nav: Flashcards
         {% assign start = card.content.cloze.start %}
         {% assign cloze_end = card.content.cloze.end %}
         {% assign before = text | slice: 0, start %}
-        {% assign cloze_length = cloze_end | minus: start %}
+        {% assign cloze_length = cloze_end | minus: start | plus: 1 %}
         {% assign hidden = text | slice: start, cloze_length %}
-        {% assign after = text | slice: cloze_end, 1000 %}
+        {% assign after_start = cloze_end | plus: 1 %}
+        {% assign after = text | slice: after_start, 1000 %}
 
         <div class="flashcard border border-gray-200 rounded-lg p-4 bg-white shadow-sm"
              data-controller="flashcard">
