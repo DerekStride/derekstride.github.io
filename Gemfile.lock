@@ -57,6 +57,10 @@ GEM
     google-protobuf (4.33.2-x86_64-linux-musl)
       bigdecimal
       rake (>= 13)
+    hashcards_readwise (0.1.4)
+      logger
+      sqlite3
+      toml-rb
     http_parser.rb (0.8.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
@@ -208,6 +212,7 @@ PLATFORMS
 
 DEPENDENCIES
   debug
+  hashcards_readwise
   jekyll (~> 4.4.0)
   jekyll-feed (~> 0.12)
   jekyll-graphviz-dot
@@ -252,6 +257,7 @@ CHECKSUMS
   google-protobuf (4.33.2-x86_64-darwin) sha256=87cde586234674562cf099e2b708a65e376e2d39b0f0f48281f4b4ea182b47f8
   google-protobuf (4.33.2-x86_64-linux-gnu) sha256=73cba041477afcac92ff383fcbdec195ea28d96b994876d1deaa944d18f91786
   google-protobuf (4.33.2-x86_64-linux-musl) sha256=97cdf4f772c5540f9274603b00f1474ed5e6e2238b1d8b1585e77f941a36bd2c
+  hashcards_readwise (0.1.4) sha256=b3455026663d148814afdfc7bea153c82e56abb2c4a878b166a0034721ef4785
   http_parser.rb (0.8.0) sha256=5a0932f1fa82ce08a8516a2685d5a86031c000560f89946913c555a0697544be
   i18n (1.14.7) sha256=ceba573f8138ff2c0915427f1fc5bdf4aa3ab8ae88c8ce255eb3ecf0a11a5d0f
   io-console (0.8.2) sha256=d6e3ae7a7cc7574f4b8893b4fca2162e57a825b223a177b7afa236c5ef9814cc
