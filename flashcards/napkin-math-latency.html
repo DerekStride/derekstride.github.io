@@ -18,302 +18,962 @@
   <link rel="stylesheet" href="/assets/css/bundle.css" /><link rel="canonical" href="https://derek.stride.host/flashcards/napkin-math-latency" /><link rel="alternate" type="application/rss+xml" title="derekstride" href="/rss.xml">
 </head>
 <body class="py-8">
-  <div class="md:container mx-auto px-8"><nav><a class="text-xl text-gray-500 hover:text-gray-900" href="/flashcards">Flashcards</a></nav><article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+  <div class="md:container mx-auto px-8"><nav><a class="text-xl text-gray-500 hover:text-gray-900" href="/flashcards">Flashcards</a></nav><article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none">
   <h1 class="pt-8">Napkin Math: Latency</h1>
-  <time datetime="2025-12-20T04:29:46+00:00">December 20, 2025</time>
-  <p>C:
-Operation: Sequential Memory R/W (64 bytes)</p>
-
-<p>Latency: [0.5 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Sequential Memory R/W (64 bytes): Single Thread No SIMD</p>
-
-<p>Latency: [0.5 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Sequential Memory R/W (64 bytes): Single Thread SIMD</p>
-
-<p>Latency: [0.5 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Sequential Memory R/W (64 bytes): Threaded No SIMD</p>
-
-<p>Latency: [0.5 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Sequential Memory R/W (64 bytes): Threaded SIMD</p>
-
-<p>Latency: [0.5 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Network Same-Zone</p>
-
-<p>Throughput: [10 GiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Network Same-Zone: Inside VPC</p>
-
-<p>Throughput: [10 GiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Network Same-Zone: Outside VPC</p>
-
-<p>Throughput: [3 GiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Hashing not crypto-safe (64 bytes)</p>
-
-<p>Latency: [25 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Random Memory R/W (64 bytes)</p>
-
-<p>Latency: [50 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Fast Serialization</p>
-
-<p>Throughput: [1 GiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Fast Deserialization</p>
-
-<p>Throughput: [1 GiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: System Call</p>
-
-<p>Latency: [500 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Hashing crypto-safe (64 bytes)</p>
-
-<p>Latency: [100 ns]</p>
-
-<hr />
-
-<p>C:
-Operation: Sequential SSD read (8 KiB)</p>
-
-<p>Latency: [1 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: Context Switch</p>
-
-<p>Latency: [10 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: Sequential SSD write -fsync (8KiB)</p>
-
-<p>Latency: [10 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: TCP Echo Server (32 KiB)</p>
-
-<p>Latency: [10 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: Decompression</p>
-
-<p>Throughput: [1 GiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Compression</p>
-
-<p>Throughput: [500 MiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Sequential SSD write +fsync (8KiB)</p>
-
-<p>Latency: [1 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Sorting (64-bit integers)</p>
-
-<p>Throughput: [200 MiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Sequential HDD Read (8 KiB)</p>
-
-<p>Latency: [10 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Blob Storage GET 1 conn</p>
-
-<p>Latency: [50 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Blob Storage GET n conn (offsets)</p>
-
-<p>Latency: [50 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Blob Storage PUT 1 conn</p>
-
-<p>Latency: [50 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Blob Storage PUT n conn (multipart)</p>
-
-<p>Latency: [150 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Random SSD Read (8 KiB)</p>
-
-<p>Latency: [100 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: Serialization</p>
-
-<p>Throughput: [100 MiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Deserialization</p>
-
-<p>Throughput: [100 MiB/s]</p>
-
-<hr />
-
-<p>C:
-Operation: Proxy: Envoy/ProxySQL/Nginx/HAProxy</p>
-
-<p>Latency: [50 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: Network within same region</p>
-
-<p>Latency: [250 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: Premium network within zone/VPC</p>
-
-<p>Latency: [250 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: MySQL/Memcached/Redis Query</p>
-
-<p>Latency: [500 μs]</p>
-
-<hr />
-
-<p>C:
-Operation: Random HDD Read (8 KiB)</p>
-
-<p>Latency: [10 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Network NA Central &lt;-&gt; East</p>
-
-<p>Latency: [25 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Network NA Central &lt;-&gt; West</p>
-
-<p>Latency: [40 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Network NA East &lt;-&gt; West</p>
-
-<p>Latency: [60 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Network EU West &lt;-&gt; NA East</p>
-
-<p>Latency: [80 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Network EU West &lt;-&gt; NA Central</p>
-
-<p>Latency: [100 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Network NA West &lt;-&gt; Singapore</p>
-
-<p>Latency: [180 ms]</p>
-
-<hr />
-
-<p>C:
-Operation: Network EU West &lt;-&gt; Singapore</p>
-
-<p>Latency: [160 ms]</p>
-<hr class="pb-12" />
+  
+
+  <div class="flashcard-deck space-y-6 mt-8">
+    
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network EU West <-> Singapore
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">160 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential Memory R/W (64 bytes): Single Thread No SIMD
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">0.5 ns</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential Memory R/W (64 bytes)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">0.5 ns</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network EU West <-> NA East
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">80 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network Same-Zone: Outside VPC
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">3 GiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network NA Central <-> West
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">40 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: TCP Echo Server (32 KiB)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">10 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sorting (64-bit integers)
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">200 MiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Proxy: Envoy/ProxySQL/Nginx/HAProxy
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">50 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential Memory R/W (64 bytes): Threaded No SIMD
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">0.5 ns</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Deserialization
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">100 MiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Decompression
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">1 GiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Serialization
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">100 MiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential Memory R/W (64 bytes): Single Thread SIMD
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">0.5 ns</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Blob Storage GET n conn (offsets)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">50 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network Same-Zone
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">10 GiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Compression
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">500 MiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network NA Central <-> East
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">25 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: System Call
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">500 ns</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Hashing crypto-safe (64 bytes)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">100 ns</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: MySQL/Memcached/Redis Query
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">500 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network EU West <-> NA Central
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">100 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Blob Storage PUT 1 conn
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">50 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Blob Storage PUT n conn (multipart)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">150 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Hashing not crypto-safe (64 bytes)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">25 ns</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential SSD write -fsync (8KiB)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">10 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network NA East <-> West
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">60 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential SSD read (8 KiB)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">1 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Random HDD Read (8 KiB)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">10 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential HDD Read (8 KiB)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">10 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Random Memory R/W (64 bytes)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">50 ns</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Random SSD Read (8 KiB)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">100 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Premium network within zone/VPC
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">250 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Context Switch
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">10 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network within same region
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">250 μs</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Fast Serialization
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">1 GiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Fast Deserialization
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">1 GiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network NA West <-> Singapore
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">180 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential SSD write +fsync (8KiB)
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">1 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Blob Storage GET 1 conn
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">50 ms</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Network Same-Zone: Inside VPC
+
+Throughput: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">10 GiB/s</span></pre>
+        </div>
+
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard max-w-xl p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm"
+             data-controller="flashcard">
+          <pre class="whitespace-pre-wrap font-mono text-sm m-0 bg-transparent text-gray-700 leading-relaxed">Operation: Sequential Memory R/W (64 bytes): Threaded SIMD
+
+Latency: <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded-md">0.5 ns</span></pre>
+        </div>
+
+      
+    
+  </div>
+
+  <hr class="pb-12 mt-8" />
 </article>
+
+<script type="module" src="/assets/js/application.js"></script>
+
+<style>
+  .cloze-hidden {
+    background-color: #374151;
+    color: #374151;
+    transition: all 0.2s ease;
+    border: 1px solid #4b5563;
+  }
+  .cloze-hidden:hover {
+    background-color: #4b5563;
+    color: #4b5563;
+    border-color: #6b7280;
+  }
+  .cloze-revealed {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+  }
+</style>
 </div>
 </body>
 </html>
