@@ -1,4 +1,192 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://derek.stride.host/posts/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2025-12-22T21:03:19+00:00</updated><id>https://derek.stride.host/posts/rss.xml</id><title type="html">derekstride</title><author><name>derekstride</name></author><entry><title type="html">My Workflow with AI Agents</title><link href="https://derek.stride.host/posts/my-ai-workflow" rel="alternate" type="text/html" title="My Workflow with AI Agents" /><published>2025-12-05T00:00:00+00:00</published><updated>2025-12-05T00:00:00+00:00</updated><id>https://derek.stride.host/posts/my-ai-workflow</id><content type="html" xml:base="https://derek.stride.host/posts/my-ai-workflow"><![CDATA[<h2 id="system-prompt--history">System Prompt – History</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://derek.stride.host/posts/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2026-02-13T00:58:22+00:00</updated><id>https://derek.stride.host/posts/rss.xml</id><title type="html">derekstride</title><author><name>derekstride</name></author><entry><title type="html">UUIDv7 vs ULID</title><link href="https://derek.stride.host/posts/uuidv7-vs-ulid" rel="alternate" type="text/html" title="UUIDv7 vs ULID" /><published>2026-02-13T00:00:00+00:00</published><updated>2026-02-13T00:00:00+00:00</updated><id>https://derek.stride.host/posts/uuidv7-vs-ulid</id><content type="html" xml:base="https://derek.stride.host/posts/uuidv7-vs-ulid"><![CDATA[<p>If you’ve been building systems that need unique identifiers, you’ve probably run into the limitations of UUIDv4. Random
+UUIDs fragment B-tree indexes, cause excessive page splits, and destroy cache locality in databases. Two formats emerged
+to fix this by putting a timestamp first: ULID (2016) and UUIDv7 (2024, via RFC 9562). They’re remarkably similar in
+structure but differ in important ways.</p>
+
+<h2 id="the-problem-they-both-solve">The Problem They Both Solve</h2>
+
+<p>UUIDv4 generates fully random 128-bit values. When used as a primary key, each insert targets a random location in a
+B-tree index. Sequential IDs cause 10-20 page splits per million records; UUIDv4 causes 5,000-10,000+. Index pages
+average ~69% full instead of ~90%, wasting disk space and I/O. Buffer cache effectiveness drops because hot pages are
+spread across the entire index.</p>
+
+<p>Both UUIDv7 and ULID fix this by putting a millisecond-precision Unix timestamp in the most significant bits. New IDs
+append to the end of the index, just like auto-incrementing integers, while retaining 128-bit global uniqueness.</p>
+
+<h2 id="structure">Structure</h2>
+
+<p>Both formats are 128 bits. Both dedicate the leading 48 bits to a Unix epoch millisecond timestamp. The difference is
+in how they use the remaining 80 bits.</p>
+
+<h3 id="ulid">ULID</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 01AN4Z07BY      79KA1307SR9X4MV3
+|----------|    |----------------|
+ Timestamp          Randomness
+  48 bits            80 bits
+</code></pre></div></div>
+
+<p>All 80 remaining bits are available for randomness. No bits are reserved for format metadata.</p>
+
+<h3 id="uuidv7">UUIDv7</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                           unix_ts_ms                          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          unix_ts_ms           |  ver  |       rand_a          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|var|                        rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                            rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</code></pre></div></div>
+
+<p>Six bits are consumed by the version (<code class="language-plaintext highlighter-rouge">ver</code>, 4 bits, set to <code class="language-plaintext highlighter-rouge">0111</code>) and variant (<code class="language-plaintext highlighter-rouge">var</code>, 2 bits, set to <code class="language-plaintext highlighter-rouge">10</code>) fields.
+That leaves 74 bits for randomness: 12 in <code class="language-plaintext highlighter-rouge">rand_a</code> and 62 in <code class="language-plaintext highlighter-rouge">rand_b</code>. Those 6 bits are the cost of UUID format
+compliance.</p>
+
+<h2 id="encoding">Encoding</h2>
+
+<p>This is where the two formats diverge most visibly.</p>
+
+<p><strong>ULID</strong> uses Crockford’s Base32 encoding (5 bits per character), producing a 26-character string:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>01ARZ3NDEKTSV4RRFFQ69G5FAV
+</code></pre></div></div>
+
+<p>The alphabet (<code class="language-plaintext highlighter-rouge">0123456789ABCDEFGHJKMNPQRSTVWXYZ</code>) omits I, L, O, and U to avoid visual ambiguity. It’s case
+insensitive, contains no hyphens or special characters, and is URL-safe.</p>
+
+<p><strong>UUIDv7</strong> uses the standard UUID hex-with-dashes encoding, producing a 36-character string:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>01932c08-e690-7584-b945-253de779b977
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">7</code> after the second dash is the version nibble. This format is instantly recognizable as a UUID by any system that
+handles UUIDs.</p>
+
+<h2 id="monotonicity">Monotonicity</h2>
+
+<p>Both specs address what happens when multiple IDs are generated within the same millisecond.</p>
+
+<p><strong>ULID</strong> increments the random component by 1 in the least significant bit position. If the 80-bit random space
+overflows within a single millisecond, generation fails. In practice, 2^80 IDs per millisecond is not a realistic
+concern.</p>
+
+<p><strong>UUIDv7</strong> offers three methods (RFC 9562, Section 6.2):</p>
+
+<ol>
+  <li><strong>Fixed-length counter</strong> in <code class="language-plaintext highlighter-rouge">rand_a</code> or the leading bits of <code class="language-plaintext highlighter-rouge">rand_b</code></li>
+  <li><strong>Monotonic random</strong>: treat the random bits as a counter, increment on each generation</li>
+  <li><strong>Sub-millisecond precision</strong>: use up to 12 bits of <code class="language-plaintext highlighter-rouge">rand_a</code> for sub-millisecond clock precision</li>
+</ol>
+
+<p>The approach is left to the implementation. PostgreSQL 18’s built-in <code class="language-plaintext highlighter-rouge">uuidv7()</code> uses method 3, storing sub-millisecond
+precision in <code class="language-plaintext highlighter-rouge">rand_a</code> to guarantee monotonicity within a single backend connection.</p>
+
+<h2 id="standardization">Standardization</h2>
+
+<p><strong>UUIDv7</strong> is defined in RFC 9562, published May 2024 by the IETF. It supersedes RFC 4122 and carries the weight of a
+formal internet standard. The version and variant bits make it self-describing: any system that understands UUIDs can
+parse a UUIDv7, detect its version, and extract the timestamp.</p>
+
+<p><strong>ULID</strong> is a community specification hosted on GitHub (<a href="https://github.com/ulid/spec">ulid/spec</a>). It has broad
+adoption and multiple implementations across languages but is not an IETF or ISO standard. There is no version/variant
+metadata in the format itself.</p>
+
+<h2 id="ecosystem-support">Ecosystem Support</h2>
+
+<p>UUIDv7 benefits from the UUID ecosystem. Every language, database, and framework already has UUID support. The <code class="language-plaintext highlighter-rouge">uuid</code>
+column type in PostgreSQL, MySQL’s <code class="language-plaintext highlighter-rouge">BINARY(16)</code>, and ORMs across every language all handle UUIDs natively. PostgreSQL 18
+adds a built-in <code class="language-plaintext highlighter-rouge">uuidv7()</code> function. For earlier versions, the <code class="language-plaintext highlighter-rouge">pg_uuidv7</code> extension fills the gap.</p>
+
+<p>ULID requires dedicated libraries. Most languages have mature ULID implementations, but you’ll need to add a dependency
+rather than relying on standard library support. Database storage typically means storing ULIDs as <code class="language-plaintext highlighter-rouge">CHAR(26)</code>,
+<code class="language-plaintext highlighter-rouge">BINARY(16)</code>, or converting to a UUID-compatible binary representation.</p>
+
+<h2 id="comparison">Comparison</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>ULID</th>
+      <th>UUIDv7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Size</strong></td>
+      <td>128 bits</td>
+      <td>128 bits</td>
+    </tr>
+    <tr>
+      <td><strong>String length</strong></td>
+      <td>26 chars</td>
+      <td>36 chars</td>
+    </tr>
+    <tr>
+      <td><strong>Encoding</strong></td>
+      <td>Crockford Base32</td>
+      <td>Hex with dashes</td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong></td>
+      <td>48-bit ms</td>
+      <td>48-bit ms</td>
+    </tr>
+    <tr>
+      <td><strong>Random bits</strong></td>
+      <td>80</td>
+      <td>74 (6 used by ver/var)</td>
+    </tr>
+    <tr>
+      <td><strong>Standardized</strong></td>
+      <td>Community spec</td>
+      <td>RFC 9562</td>
+    </tr>
+    <tr>
+      <td><strong>UUID-compatible</strong></td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><strong>Case sensitive</strong></td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><strong>URL safe</strong></td>
+      <td>Yes</td>
+      <td>Needs encoding for dashes</td>
+    </tr>
+    <tr>
+      <td><strong>Native DB support</strong></td>
+      <td>Limited</td>
+      <td>PostgreSQL 18+, growing</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="which-one-should-you-use">Which One Should You Use?</h2>
+
+<p><strong>Use UUIDv7</strong> if you’re working in an ecosystem that already uses UUIDs, need database-native support, or want the
+backing of a formal standard. In most cases this is the right default. It slots into existing UUID columns, works with
+existing UUID libraries, and will only gain more native support over time.</p>
+
+<p><strong>Use ULID</strong> if you need shorter, more human-readable identifiers, are already using ULIDs in your system, or are
+working in a context where the 10-character savings matters (URLs, logs, user-facing IDs). The format is also a
+reasonable choice when you want the full 80 bits of randomness per millisecond.</p>
+
+<p><strong>Either way</strong>, both are a significant improvement over UUIDv4 for database primary keys. The timestamp prefix means
+sequential index inserts, better cache locality, and the ability to extract creation time directly from the ID. If
+you’re still using UUIDv4 as a primary key, switching to either format is worth it.</p>
+
+<p>One thing to keep in mind: both formats embed a creation timestamp, which means they leak timing information. If that’s
+a concern (security tokens, API keys, session IDs), UUIDv4 remains the right choice for those specific use cases. A
+common pattern is UUIDv7 for internal primary keys and UUIDv4 for externally-exposed identifiers.</p>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[Both UUIDv7 and ULID solve the same problem: time-sortable, globally unique identifiers. They share the same fundamental structure but differ in standardization, encoding, and ecosystem support. Here's how they compare and when to use each.]]></summary></entry><entry><title type="html">My Workflow with AI Agents</title><link href="https://derek.stride.host/posts/my-ai-workflow" rel="alternate" type="text/html" title="My Workflow with AI Agents" /><published>2025-12-05T00:00:00+00:00</published><updated>2025-12-05T00:00:00+00:00</updated><id>https://derek.stride.host/posts/my-ai-workflow</id><content type="html" xml:base="https://derek.stride.host/posts/my-ai-workflow"><![CDATA[<h2 id="system-prompt--history">System Prompt – History</h2>
 
 <p>In Februray 2025, I went on parental leave. At the time, Copilot, ChatGPT, Cursor, &amp; custom built AI workflows using
 your own <code class="language-plaintext highlighter-rouge">TOKEN</code> were the main ways to use generative AI for work. As a neovim user these tools weren’t compelling
