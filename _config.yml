@@ -17,6 +17,8 @@ plugins:
 feed:
   path: /posts/rss.xml
   collections:
+    notes:
+      path: /notes/rss.xml
     books:
       path: /books/rss.xml
     talks:
@@ -39,6 +41,9 @@ exclude:
 
 collections:
   posts:
+    output: true
+    permalink: /:collection/:title
+  notes:
     output: true
     permalink: /:collection/:title
   books:

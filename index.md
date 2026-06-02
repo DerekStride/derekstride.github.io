@@ -7,9 +7,7 @@ id: home
 
 # Hi, I'm Derek.
 
-I'm a developer based in Ottawa, ON, working on storefront performance at [Shopify](https://github.com/shopify/). The most
-recent project I'm proud of is [Kinsley](https://github.com/DerekStride/kinsley). You can find the rest of my projects
-on [Github](https://github.com/{{- site.data.general.github -}}).
+I'm a developer based in Ottawa, ON, working on storefront performance at [Shopify](https://github.com/shopify/). You can find my projects on [Github](https://github.com/{{- site.data.general.github -}}).
 
 Want to chat? Feel free to [email](mailto:{{- site.data.general.email -}}) me.
 
@@ -22,6 +20,17 @@ Want to chat? Feel free to [email](mailto:{{- site.data.general.email -}}) me.
 {% endfor %}
 
 [I wrote {{ site.posts.size }} posts](/posts). {% include posts-rss.md %}
+
+## Notes
+
+{% assign sorted_notes = site.notes | sort: 'priority' | reverse %}
+{% for note in sorted_notes limit: entry_limit -%}
+  [{{ note.title }}]({{ note.url }})
+
+  {{ note.excerpt }}
+{% endfor %}
+
+[I wrote {{ site.notes.size }} notes](/notes).
 
 ## Talks
 
