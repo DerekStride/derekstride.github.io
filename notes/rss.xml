@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://derek.stride.host/notes/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2026-06-03T13:15:44+00:00</updated><id>https://derek.stride.host/notes/rss.xml</id><title type="html">derekstride | Notes</title><author><name>derekstride</name></author><entry><title type="html">Portfolio Foundations</title><link href="https://derek.stride.host/notes/portfolio-foundations" rel="alternate" type="text/html" title="Portfolio Foundations" /><published>2026-06-02T00:00:00+00:00</published><updated>2026-06-02T00:00:00+00:00</updated><id>https://derek.stride.host/notes/portfolio-foundations</id><content type="html" xml:base="https://derek.stride.host/notes/portfolio-foundations"><![CDATA[<p>The following concepts reflect my personal investment strategy and are not meant to be general investment advice. I am intentionally accepting risks other people may reasonably reject. Tax-sensitive strategies should be reviewed with a qualified professional.</p>
+
+<h2 id="own-the-market">Own the market</h2>
+
+<p>The most consistent way to earn money in the stock market is to own the market. Over long horizons, global equity returns have been positive. Beating the average is difficult, so the strategy I use is to own a fund that holds the underlying stocks in their relative market weights and accept the average return.</p>
+
+<p>I hold the vast majority of my equity exposure in <a href="https://www.blackrock.com/ca/investors/en/products/309480/"><code class="language-plaintext highlighter-rouge">$XEQT</code></a>, an all-equity, globally diversified fund. It has an evidence-based home-country bias for Canada, meaning it overweights Canadian stocks relative to Canada’s share of the global market.</p>
+
+<h2 id="100-equity">100% equity</h2>
+
+<p>Stock market funds are often broken up by the stock or equity portion &amp; a bond portion. They range from 100% equities, to mixes like 80/20, 60/40, or 40/60. The most common being the 60/40 which is 60% equity and 40% bonds.</p>
+
+<p>Traditional advice says to hold more of your investments in stocks while young and gradually increase your bond allocation as you approach retiremnt, however, more recent studies suggest that holding a 100% equity fund even through retirement is likely to outperform. However, this may mean years of reduced spending in retirement if the stock market takes a downturn.</p>
+
+<h2 id="two-ways-to-take-on-more-risk">Two ways to take on more risk</h2>
+
+<p>Owning the market captures the market return. There are two clear ways to take on additional risk in exchange for additional expected return:</p>
+
+<ol>
+  <li><strong>Concentration</strong> — owning a smaller subset of the market. At the extreme this is single-stock picking. Other versions include sector tilts or factor tilts.</li>
+  <li><strong>Leverage</strong> — borrowing money to invest, so your equity exposure exceeds 100% of your own capital.</li>
+</ol>
+
+<p>These are different risks. Concentration risk is the risk that your slice of the market underperforms the whole. Leverage risk is the risk that the same market drawdown is amplified against borrowed money you still owe.</p>
+
+<h3 id="concentration">Concentration</h3>
+
+<p><em>Factor investing</em> is the form of concentration I find most defensible. Factor tilts overweight stocks that fall under well-researched factors (size, value, profitability, momentum) that historically have outperformed the broad market. Still diversified, but not market-weighted.</p>
+
+<p>In Canada, CIBC and Avantis launched <a href="https://www.cibc.com/en/personal-banking/investments/etfs/avantis-all-equity-asset-allocation-etf.html"><code class="language-plaintext highlighter-rouge">$CAGE</code></a>, which offers global all-equity exposure with factor tilts. It is the closest thing to a “tilted XEQT” available domestically.</p>
+
+<p>I avoid concentration in my core portfolio, whether in a single stock, a themed ETF, or a sector ETF. If I take a concentrated position, it goes in my non-registered account with money I can afford to lose, so it cannot derail my long-term strategy.</p>
+
+<h3 id="leverage">Leverage</h3>
+
+<p>I prefer leverage over concentration when seeking to increase expected returns. A few reasons:</p>
+
+<ul>
+  <li>It does not require me to predict which subset of the market will outperform.</li>
+  <li>It scales with my conviction in the market overall rather than in a specific narrative.</li>
+  <li>In Canada, leverage used to acquire income-producing investments generally produces tax-deductible interest, which directly reduces the after-tax cost.</li>
+</ul>
+
+<p>Concretely, instead of holding 100% equity exposure with my own capital, I can hold something like 120% equity exposure by borrowing enough to buy an additional 20% stake in <code class="language-plaintext highlighter-rouge">$XEQT</code>. The borrowed portion compounds against the same market, but the downside also amplifies.</p>
+
+<p>Since this strategy involves increasing equity exposure it implies you should prefer being in a 100% equity fund before considering using leverage. Otherwise, you may not have the risk tolerance for it.</p>
+
+<h2 id="risk-acknowledgments">Risk acknowledgments</h2>
+
+<ul>
+  <li><strong>Drawdowns are real.</strong> A 100% equity portfolio can lose 30–50% in a year. Leverage amplifies that against borrowed money you still owe.</li>
+  <li><strong>Leverage can squeeze cash flow at exactly the wrong time.</strong> Rising rates often coincide with falling markets. Margin loans can be called.</li>
+</ul>
+
+<p>A reasonable person can read all of this and decide that a 100% equity portfolio is too aggressive, or that any leverage is too aggressive. I am intentionally accepting these risks.</p>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[The ideas underneath the rest of this series — owning the market, the two ways to take on more risk for more return, and why I prefer leverage over concentration.]]></summary></entry></feed>
