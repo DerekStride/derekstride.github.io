@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://derek.stride.host/notes/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2026-06-03T13:15:44+00:00</updated><id>https://derek.stride.host/notes/rss.xml</id><title type="html">derekstride | Notes</title><author><name>derekstride</name></author><entry><title type="html">Portfolio Foundations</title><link href="https://derek.stride.host/notes/portfolio-foundations" rel="alternate" type="text/html" title="Portfolio Foundations" /><published>2026-06-02T00:00:00+00:00</published><updated>2026-06-02T00:00:00+00:00</updated><id>https://derek.stride.host/notes/portfolio-foundations</id><content type="html" xml:base="https://derek.stride.host/notes/portfolio-foundations"><![CDATA[<p>The following concepts reflect my personal investment strategy and are not meant to be general investment advice. I am intentionally accepting risks other people may reasonably reject. Tax-sensitive strategies should be reviewed with a qualified professional.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://derek.stride.host/notes/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2026-06-03T14:57:00+00:00</updated><id>https://derek.stride.host/notes/rss.xml</id><title type="html">derekstride | Notes</title><author><name>derekstride</name></author><entry><title type="html">RESP Strategy</title><link href="https://derek.stride.host/notes/resp-strategy" rel="alternate" type="text/html" title="RESP Strategy" /><published>2026-06-03T00:00:00+00:00</published><updated>2026-06-03T00:00:00+00:00</updated><id>https://derek.stride.host/notes/resp-strategy</id><content type="html" xml:base="https://derek.stride.host/notes/resp-strategy"><![CDATA[<p>I have kids and both Mikaela &amp; I went to university. I studied Software Engineering and she studied Social Work. There’s a high likelihood that our kids will follow a similar path and pursue higher education, or at least some of them will. Because of that, the RESP is an account I prioritize.</p>
+
+<p>The RESP has a lifetime maximum contribution limit of $50,000 per child. You can also receive up to $7,200 in government grants through the Canada Education Savings Grant (CESG). The grant is generally 20% of your contributions, up to $500 per year. That means contributing $2,500 a year receives the maximum annual grant.</p>
+
+<p>For the astute reader, you may have noticed that $7,200 / 20% is $36,000. This leaves $14,000 of extra contributions available before hitting the $50,000 lifetime limit.</p>
+
+<p>To maximize potential growth, there are a few strategies:</p>
+
+<ol>
+  <li>Contribute $2,500 a year and collect the grant steadily.</li>
+  <li>Contribute a larger amount up front, for example $16,500 in year one, and then $2,500 a year after that until the grant is maxed.</li>
+  <li>Contribute the full $50,000 up front and hope the extra years of compounding outpace the free 20% grant you gave up along the way.</li>
+</ol>
+
+<p>The first approach is the simplest. The second tries to balance getting the grant with giving more money time to compound. The third is the most aggressive and only makes sense if the math works out and you have the cash flow to support it.</p>
+
+<h2 id="withdrawals">Withdrawals</h2>
+
+<p>There are withdrawal limitations you should be aware of if you go to maximize the amount you contribute.</p>
+
+<p>First, the original contributions — the amount you deposited and that counts against the $50,000 lifetime limit — are treated differently from the grants and investment growth portion of the account.</p>
+
+<p>The original contributions can be withdrawn without tax and fall under PSE <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/payments-resp.html#refund">(Post-Secondary Education)</a> withdrawals.</p>
+
+<p>The grants and investment growth fall under EAP <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/payments-resp.html#eap">(Educational Assistance Payments)</a> withdrawals. EAP withdrawals must be used for reasonable education-related expenses and are taxed in the student’s hands. Since students often have little or no income, this is usually a good tax outcome.</p>
+
+<p>The EAP withdrawals can be audited by the CRA. There is an inflation-adjusted limit per calendar year under which the promoter, aka the institution you have the account with, is not required to ask for proof of expenses. For withdrawals above this limit, your institution may ask for justification.</p>
+
+<p>I’m not at the withdrawal stage with my kids yet, so I don’t have first-hand experience. However, I’ve heard the justification process is quite forgiving, so don’t be too intimidated — but do some research before you get there.</p>
+
+<p>I’ve also heard that the umbrella of things that fall under education is quite broad. If my kids choose not to go to university or college, I may encourage them to pursue shorter courses or certifications that genuinely fit their interests. If that turns out to be a cooking class while they’re still living at home, I’ll consider the improved household snack quality a bonus.</p>
+
+<h2 id="if-the-money-cannot-be-used">If the money cannot be used</h2>
+
+<p>If the money is not able to be used for education, the original contribution money is returned to you. The grants are reclaimed by the CRA. The investment growth is taxed at your marginal rate plus 20%, unless it can be transferred to an RRSP under the applicable rules.</p>
+
+<p>Not the worst outcome, but worth considering when the kids are older and you have a better idea of what they are interested in.</p>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[How I think about RESPs, government grants, contribution timing, and the practical withdrawal rules as a Canadian parent.]]></summary></entry><entry><title type="html">Portfolio Foundations</title><link href="https://derek.stride.host/notes/portfolio-foundations" rel="alternate" type="text/html" title="Portfolio Foundations" /><published>2026-06-02T00:00:00+00:00</published><updated>2026-06-02T00:00:00+00:00</updated><id>https://derek.stride.host/notes/portfolio-foundations</id><content type="html" xml:base="https://derek.stride.host/notes/portfolio-foundations"><![CDATA[<p>The following concepts reflect my personal investment strategy and are not meant to be general investment advice. I am intentionally accepting risks other people may reasonably reject. Tax-sensitive strategies should be reviewed with a qualified professional.</p>
 
 <h2 id="own-the-market">Own the market</h2>
 
