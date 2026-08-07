@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://derek.stride.host/notes/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2026-08-07T15:10:39+00:00</updated><id>https://derek.stride.host/notes/rss.xml</id><title type="html">derekstride | Notes</title><author><name>derekstride</name></author><entry><title type="html">The Smith Manoeuvre</title><link href="https://derek.stride.host/notes/smith-manoeuvre" rel="alternate" type="text/html" title="The Smith Manoeuvre" /><published>2026-07-07T00:00:00+00:00</published><updated>2026-07-07T00:00:00+00:00</updated><id>https://derek.stride.host/notes/smith-manoeuvre</id><content type="html" xml:base="https://derek.stride.host/notes/smith-manoeuvre"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://derek.stride.host/notes/rss.xml" rel="self" type="application/atom+xml" /><link href="https://derek.stride.host/" rel="alternate" type="text/html" /><updated>2026-08-07T15:56:02+00:00</updated><id>https://derek.stride.host/notes/rss.xml</id><title type="html">derekstride | Notes</title><author><name>derekstride</name></author><entry><title type="html">The Smith Manoeuvre</title><link href="https://derek.stride.host/notes/smith-manoeuvre" rel="alternate" type="text/html" title="The Smith Manoeuvre" /><published>2026-07-07T00:00:00+00:00</published><updated>2026-07-07T00:00:00+00:00</updated><id>https://derek.stride.host/notes/smith-manoeuvre</id><content type="html" xml:base="https://derek.stride.host/notes/smith-manoeuvre"><![CDATA[<blockquote>
   <p>The Smith Manoeuvre involves leverage, tax-deductibility rules, and rigorous tracking. It is one of the more dangerous strategies in this series. Consider talking to a <a href="https://smithman.ca/find-an-smcp">Smith Manoeuvre Certified Professional</a> or another qualified tax professional before attempting it.</p>
 </blockquote>
 
@@ -78,12 +78,13 @@
   <li>The investment side is <code class="language-plaintext highlighter-rouge">$XEQT</code>, which I’d want to own anyway.</li>
 </ul>
 
-<p>It does not fit when the household is not yet <a href="/notes/portfolio-foundations#sequencing">funding the basics</a>, or when the leverage ratio against the existing portfolio is uncomfortably high.</p>
+<p>It does not fit when the household is not yet <a href="/notes/canadian-tax-strategy#account-strategy">funding the basics</a>, or when the leverage ratio against the existing portfolio is uncomfortably high.</p>
 
 <h2 id="related">Related</h2>
 
 <ul>
-  <li><a href="/notes/portfolio-foundations">Portfolio foundations</a></li>
+  <li><a href="/notes/canadian-tax-strategy">Canadian Investing &amp; Tax Strategy</a></li>
+  <li><a href="/notes/portfolio-foundations">Portfolio Foundations</a></li>
 </ul>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[Converting non-deductible mortgage interest into deductible investment-loan interest. A leverage strategy first, a tax strategy second.]]></summary></entry><entry><title type="html">RRSP &amp;amp; Spousal RRSP</title><link href="https://derek.stride.host/notes/rrsp-strategy" rel="alternate" type="text/html" title="RRSP &amp;amp; Spousal RRSP" /><published>2026-07-07T00:00:00+00:00</published><updated>2026-07-07T00:00:00+00:00</updated><id>https://derek.stride.host/notes/rrsp-strategy</id><content type="html" xml:base="https://derek.stride.host/notes/rrsp-strategy"><![CDATA[<p>The RRSP is easiest to think about as a way to move taxable income between years. You contribute while you’re in a higher tax bracket, get the deduction now, and then pay tax later when the money is withdrawn. If the withdrawal happens in a lower tax bracket, the strategy worked.</p>
 
 <p>That’s the basic reason I prioritize this account. When my marginal tax rate is high, the RRSP deduction is valuable because it lets me defer income into years where I expect to be taxed at a lower rate.</p>
@@ -132,7 +133,87 @@
 
 <p>Spousal RRSP withdrawals can be attributed back to the contributing spouse if there were recent contributions. In plain language: if you contribute to a Spousal RRSP and the money is withdrawn too soon, the CRA may tax the withdrawal back to you instead of to your spouse.</p>
 
-<p>The common shorthand is the three-year rule: withdrawals can attribute back if the contributor made Spousal RRSP contributions in the year of withdrawal or the two previous calendar years.</p>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[How I think about RRSPs and Spousal RRSPs as tax-deferred accounts, especially when one spouse is in a high tax bracket and the household can plan around lower-income years.]]></summary></entry><entry><title type="html">RESP Strategy</title><link href="https://derek.stride.host/notes/resp-strategy" rel="alternate" type="text/html" title="RESP Strategy" /><published>2026-06-03T00:00:00+00:00</published><updated>2026-06-03T00:00:00+00:00</updated><id>https://derek.stride.host/notes/resp-strategy</id><content type="html" xml:base="https://derek.stride.host/notes/resp-strategy"><![CDATA[<p>I have kids and both Mikaela &amp; I went to university. I studied Software Engineering and she studied Social Work. There’s a high likelihood that our kids will follow a similar path and pursue higher education, or at least some of them will. Because of that, the RESP is an account I prioritize.</p>
+<p>The common shorthand is the three-year rule: withdrawals can attribute back if the contributor made Spousal RRSP contributions in the year of withdrawal or the two previous calendar years.</p>
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/notes/canadian-tax-strategy">Canadian Investing &amp; Tax Strategy</a></li>
+</ul>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[How I think about RRSPs and Spousal RRSPs as tax-deferred accounts, especially when one spouse is in a high tax bracket and the household can plan around lower-income years.]]></summary></entry><entry><title type="html">Canadian Investing &amp;amp; Tax Strategy</title><link href="https://derek.stride.host/notes/canadian-tax-strategy" rel="alternate" type="text/html" title="Canadian Investing &amp;amp; Tax Strategy" /><published>2026-07-07T00:00:00+00:00</published><updated>2026-07-07T00:00:00+00:00</updated><id>https://derek.stride.host/notes/canadian-tax-strategy</id><content type="html" xml:base="https://derek.stride.host/notes/canadian-tax-strategy"><![CDATA[<blockquote>
+  <p>This is not financial, tax, legal, or investment advice. It’s a description of my personal strategy, the risks I accept, and the tradeoffs I’m considering. Tax rules are complex and can change, so talk to a qualified professional before applying any of this to your own situation.</p>
+</blockquote>
+
+<p>Once I’ve decided what to invest in, most of the remaining decisions are about tax. Which account should hold the investment? When will the income be taxed? Whose tax return will it land on? Can the interest on borrowed money be deducted?</p>
+
+<p>I mostly buy the same investment in each account. The tax treatment is what changes.</p>
+
+<h2 id="portfolio-foundations">Portfolio foundations</h2>
+
+<p>The ideas underneath this strategy are covered in <a href="/notes/portfolio-foundations">Portfolio Foundations</a>. The short version is that I own a globally diversified stock fund and accept the market return. If I want to take on more risk for more expected return, I prefer leverage over concentration.</p>
+
+<p>Those decisions come before the account strategy. If I wasn’t comfortable with a 100% equity portfolio, I wouldn’t consider borrowing money to increase that exposure.</p>
+
+<h2 id="account-strategy">Account strategy</h2>
+
+<p>Each account creates a different opportunity:</p>
+
+<ul>
+  <li>An RRSP moves taxable income from high-income years into lower-income years.</li>
+  <li>A Spousal RRSP can move taxable income between years and between spouses.</li>
+  <li>A TFSA removes future tax on investment growth.</li>
+  <li>An RESP combines tax-deferred growth with government grants and withdrawals taxed in the student’s hands.</li>
+  <li>The Smith Manoeuvre can make interest on investment debt tax-deductible.</li>
+  <li>A non-registered account provides flexibility after the registered accounts are funded, but without a tax shelter.</li>
+</ul>
+
+<p>I don’t think there is one correct order for everyone. My order is:</p>
+
+<ol>
+  <li>Max the RRSP, splitting contributions between my RRSP and the Spousal RRSP.</li>
+  <li>Max the TFSA.</li>
+  <li>Max the RESP.</li>
+  <li>Run any additional investing through the Smith Manoeuvre.</li>
+</ol>
+
+<p>I prioritize maxing the first two every year. Whether I fully fund the RESP and make additional investments through the Smith Manoeuvre depends on how much capacity I have left.</p>
+
+<h3 id="rrsp--spousal-rrsp">RRSP &amp; Spousal RRSP</h3>
+
+<p>The RRSP is a tax-deferral account. I contribute while my marginal tax rate is high and expect to withdraw in years where it is lower. If the withdrawal happens in a lower tax bracket, the strategy worked.</p>
+
+<p>The Spousal RRSP adds another option by allowing future withdrawals to be taxed in a spouse’s hands, subject to the attribution rules. This can be useful for retirement income splitting or when a household can plan ahead for years where one spouse will have little or no income.</p>
+
+<p>I cover both accounts in <a href="/notes/rrsp-strategy">RRSP &amp; Spousal RRSP</a>.</p>
+
+<h3 id="tfsa">TFSA</h3>
+
+<p>Compared with the RRSP, the TFSA is simple. Contributions are made with after-tax dollars, but the investment growth and withdrawals are tax-free. I max it each year in January.</p>
+
+<p>Withdrawals also create an equal amount of new contribution room in the following calendar year, which makes the account more flexible than an RRSP.</p>
+
+<h3 id="resp">RESP</h3>
+
+<p>I have kids and expect that at least some of them will pursue higher education, so the RESP is an account I prioritize. The government grant provides a 20% match on eligible contributions, while the grants and investment growth are eventually taxed in the student’s hands.</p>
+
+<p>There are some interesting choices around front-loading contributions and some important withdrawal rules. I cover those in <a href="/notes/resp-strategy">RESP Strategy</a>.</p>
+
+<h3 id="smith-manoeuvre">Smith Manoeuvre</h3>
+
+<p>The Smith Manoeuvre uses a readvanceable mortgage to gradually replace non-deductible mortgage debt with investment debt whose interest may be tax-deductible. It fits my preference for leverage over concentration, but it adds meaningful risk and requires careful tracking.</p>
+
+<p>I explain the mechanics and how I measure the leverage in <a href="/notes/smith-manoeuvre">The Smith Manoeuvre</a>.</p>
+
+<h3 id="non-registered">Non-registered</h3>
+
+<p>The investments purchased through the Smith Manoeuvre live in a dedicated non-registered account. I keep that account separate from any discretionary investing so the borrowed money remains easy to trace.</p>
+
+<p>I also use a separate non-registered account for discretionary investing. This is where I’m a little looser with my investment philosophy. I may dabble with concentration strategies here, where a loss won’t affect my long-term plan. I’m still human and subject to FOMO when I see posts about call options generating hundreds of thousands of dollars. The posts about losing hundreds of thousands are enough to keep me from doing anything too risky.</p>
+
+<h2 id="putting-it-together">Putting it together</h2>
+
+<p>These accounts look separate, but the decisions affect each other. RRSP contributions affect future taxable income. Spousal RRSP contributions affect whose income it becomes. RESP and TFSA contributions compete for cash flow. The Smith Manoeuvre creates non-registered investments and debt that the household needs to carry through market downturns.</p>
+
+<p>Thinking about them as one strategy, rather than a collection of unrelated accounts, is the main idea I want to capture here.</p>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[An overview of how I think about investing, registered accounts, tax deferral, and leverage as one connected strategy.]]></summary></entry><entry><title type="html">RESP Strategy</title><link href="https://derek.stride.host/notes/resp-strategy" rel="alternate" type="text/html" title="RESP Strategy" /><published>2026-06-03T00:00:00+00:00</published><updated>2026-06-03T00:00:00+00:00</updated><id>https://derek.stride.host/notes/resp-strategy</id><content type="html" xml:base="https://derek.stride.host/notes/resp-strategy"><![CDATA[<p>I have kids and both Mikaela &amp; I went to university. I studied Software Engineering and she studied Social Work. There’s a high likelihood that our kids will follow a similar path and pursue higher education, or at least some of them will. Because of that, the RESP is an account I prioritize.</p>
 
 <p>The RESP has a lifetime maximum contribution limit of $50,000 per child. You can also receive up to $7,200 in government grants through the Canada Education Savings Grant (CESG). The grant is generally 20% of your contributions, up to $500 per year. That means contributing $2,500 a year receives the maximum annual grant.</p>
 
@@ -168,7 +249,13 @@
 
 <p>If the money is not able to be used for education, the original contribution money is returned to you. The grants are reclaimed by the CRA. The investment growth is taxed at your marginal rate plus 20%, unless it can be transferred to an RRSP under the applicable rules.</p>
 
-<p>Not the worst outcome, but worth considering when the kids are older and you have a better idea of what they are interested in.</p>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[How I think about RESPs, government grants, contribution timing, and the practical withdrawal rules as a Canadian parent.]]></summary></entry><entry><title type="html">Portfolio Foundations</title><link href="https://derek.stride.host/notes/portfolio-foundations" rel="alternate" type="text/html" title="Portfolio Foundations" /><published>2026-06-02T00:00:00+00:00</published><updated>2026-06-02T00:00:00+00:00</updated><id>https://derek.stride.host/notes/portfolio-foundations</id><content type="html" xml:base="https://derek.stride.host/notes/portfolio-foundations"><![CDATA[<p>The following concepts reflect my personal investment strategy and are not meant to be general investment advice. I am intentionally accepting risks other people may reasonably reject. Tax-sensitive strategies should be reviewed with a qualified professional.</p>
+<p>Not the worst outcome, but worth considering when the kids are older and you have a better idea of what they are interested in.</p>
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/notes/canadian-tax-strategy">Canadian Investing &amp; Tax Strategy</a></li>
+</ul>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[How I think about RESPs, government grants, contribution timing, and the practical withdrawal rules as a Canadian parent.]]></summary></entry><entry><title type="html">Portfolio Foundations</title><link href="https://derek.stride.host/notes/portfolio-foundations" rel="alternate" type="text/html" title="Portfolio Foundations" /><published>2026-06-02T00:00:00+00:00</published><updated>2026-06-02T00:00:00+00:00</updated><id>https://derek.stride.host/notes/portfolio-foundations</id><content type="html" xml:base="https://derek.stride.host/notes/portfolio-foundations"><![CDATA[<p>The following concepts reflect my personal investment strategy and are not meant to be general investment advice. I am intentionally accepting risks other people may reasonably reject. Tax-sensitive strategies should be reviewed with a qualified professional.</p>
 
 <h2 id="own-the-market">Own the market</h2>
 
@@ -222,4 +309,11 @@
   <li><strong>Leverage can squeeze cash flow at exactly the wrong time.</strong> Rising rates often coincide with falling markets. Margin loans can be called.</li>
 </ul>
 
-<p>A reasonable person can read all of this and decide that a 100% equity portfolio is too aggressive, or that any leverage is too aggressive. I am intentionally accepting these risks.</p>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[The ideas underneath the rest of this series — owning the market, the two ways to take on more risk for more return, and why I prefer leverage over concentration.]]></summary></entry></feed>
+<p>A reasonable person can read all of this and decide that a 100% equity portfolio is too aggressive, or that any leverage is too aggressive. I am intentionally accepting these risks.</p>
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/notes/canadian-tax-strategy">Canadian Investing &amp; Tax Strategy</a></li>
+  <li><a href="/notes/smith-manoeuvre">The Smith Manoeuvre</a></li>
+</ul>]]></content><author><name>derekstride</name></author><summary type="html"><![CDATA[The ideas underneath the rest of this series — owning the market, the two ways to take on more risk for more return, and why I prefer leverage over concentration.]]></summary></entry></feed>
