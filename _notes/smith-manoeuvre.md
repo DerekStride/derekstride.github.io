@@ -78,8 +78,9 @@ The Smith Manoeuvre fits because:
 - The deductibility makes the leverage materially cheaper after tax.
 - The investment side is `$XEQT`, which I'd want to own anyway.
 
-It does not fit when the household is not yet [funding the basics]({% link _notes/portfolio-foundations.md %}#sequencing), or when the leverage ratio against the existing portfolio is uncomfortably high.
+It does not fit when the household is not yet [funding the basics]({% link _notes/canadian-tax-strategy.md %}#account-strategy), or when the leverage ratio against the existing portfolio is uncomfortably high.
 
 ## Related
 
-- [Portfolio foundations]({% link _notes/portfolio-foundations.md %})
+- [Canadian Investing & Tax Strategy]({% link _notes/canadian-tax-strategy.md %})
+- [Portfolio Foundations]({% link _notes/portfolio-foundations.md %})

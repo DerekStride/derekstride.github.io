@@ -56,3 +56,8 @@ Since this strategy involves increasing equity exposure it implies you should pr
 - **Leverage can squeeze cash flow at exactly the wrong time.** Rising rates often coincide with falling markets. Margin loans can be called.
 
 A reasonable person can read all of this and decide that a 100% equity portfolio is too aggressive, or that any leverage is too aggressive. I am intentionally accepting these risks.
+
+## Related
+
+- [Canadian Investing & Tax Strategy]({% link _notes/canadian-tax-strategy.md %})
+- [The Smith Manoeuvre]({% link _notes/smith-manoeuvre.md %})

@@ -52,3 +52,7 @@ The part that makes this complicated is attribution.
 Spousal RRSP withdrawals can be attributed back to the contributing spouse if there were recent contributions. In plain language: if you contribute to a Spousal RRSP and the money is withdrawn too soon, the CRA may tax the withdrawal back to you instead of to your spouse.
 
 The common shorthand is the three-year rule: withdrawals can attribute back if the contributor made Spousal RRSP contributions in the year of withdrawal or the two previous calendar years.
+
+## Related
+
+- [Canadian Investing & Tax Strategy]({% link _notes/canadian-tax-strategy.md %})

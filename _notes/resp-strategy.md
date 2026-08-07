@@ -43,3 +43,7 @@ I've also heard that the umbrella of things that fall under education is quite b
 If the money is not able to be used for education, the original contribution money is returned to you. The grants are reclaimed by the CRA. The investment growth is taxed at your marginal rate plus 20%, unless it can be transferred to an RRSP under the applicable rules.
 
 Not the worst outcome, but worth considering when the kids are older and you have a better idea of what they are interested in.
+
+## Related
+
+- [Canadian Investing & Tax Strategy]({% link _notes/canadian-tax-strategy.md %})
