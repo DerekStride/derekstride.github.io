@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Smith Manoeuvre</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:site_name" content="derekstride">
+  <meta property="og:description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:title" content="The Smith Manoeuvre">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta rel="author" href="derekstride">
+  <meta rel="publisher" href="derekstride">
+
+  <link rel="stylesheet" href="/assets/css/bundle.css" /><link rel="canonical" href="https://derek.stride.host/notes/smith-manoeuvre" /><link rel="alternate" type="application/rss+xml" title="derekstride" href="/rss.xml">
+</head>
+<body class="py-8">
+  <div class="md:container mx-auto px-8"><nav><a class="text-xl text-gray-500 hover:text-gray-900" href="/notes">Notes</a></nav><article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+  <h1 class="pt-8">The Smith Manoeuvre</h1><blockquote>
+  <p>The Smith Manoeuvre involves leverage, tax-deductibility rules, and rigorous tracking. It is one of the more dangerous strategies in this series. Consider talking to a <a href="https://smithman.ca/find-an-smcp">Smith Manoeuvre Certified Professional</a> or another qualified tax professional before attempting it.</p>
+</blockquote>
+
+<p>The Smith Manoeuvre converts non-deductible mortgage interest into deductible investment-loan interest, while preserving the same total debt balance. It doesn’t <em>reduce</em> leverage — it changes the tax character of debt you already have. It’s a leverage strategy first, a tax strategy second.</p>
+
+<h2 id="the-setup">The setup</h2>
+
+<p>In Canada, the interest paid on your principal residence’s mortgage is not tax-deductible. The interest on a loan used to acquire income-producing investments generally is. The Smith Manoeuvre is the canonical technique for shifting from the first category to the second over time, without taking on additional total debt.</p>
+
+<p>It has two parts:</p>
+
+<ol>
+  <li><strong>Borrow against home equity</strong> through a Home Equity Line of Credit (HELOC), and invest the proceeds in income-producing assets.</li>
+  <li><strong>Deduct the HELOC interest</strong> against your income, since the borrowed money was used for an income-producing investment.</li>
+</ol>
+
+<p>The strategy assumes a <em>re-advanceable mortgage</em>: as you pay down the principal each month, equivalent room opens on the HELOC. You then draw from the HELOC, transfer the money to a dedicated non-registered investment account, and buy income-producing assets.</p>
+
+<h2 id="the-income-producing-requirement">The “income-producing” requirement</h2>
+
+<p>The CRA requires the investment to have a <em>reasonable expectation of generating income</em> for the interest to be deductible. In practice, an investment that makes taxable distributions, such as <code class="language-plaintext highlighter-rouge">$XEQT</code>, is easier to connect to an income-earning purpose.</p>
+
+<p>Using the same HELOC for personal and investment spending can make part of the interest non-deductible and make the remaining deduction much harder to trace and defend.</p>
+
+<h2 id="a-worked-example-fictional">A worked example (fictional)</h2>
+
+<p>Imagine, with rounded illustrative numbers:</p>
+
+<ul>
+  <li>A home purchased for $600,000 with 20% down, leaving a $480,000 mortgage.</li>
+  <li>A 5-year fixed term at a comfortable rate, with a re-advanceable mortgage product.</li>
+  <li>At renewal, the principal balance is roughly $400,000.</li>
+</ul>
+
+<p>That has opened up approximately $80,000 of HELOC room. Borrowing the full $80,000 and investing it in <code class="language-plaintext highlighter-rouge">$XEQT</code> brings the household’s total debt back to roughly $480,000 — the same as the original mortgage, but now split into two pieces:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[==========================================]   $480k Mortgage (non-deductible)
+
+[====================================      ]   $400k Mortgage (non-deductible)
+[                                    ======]    $80k HELOC    (potentially deductible)
+</code></pre></div></div>
+
+<p>Over time, more of the household’s debt is replaced by investment debt whose interest may be deductible, while the non-deductible mortgage balance shrinks.</p>
+
+<h2 id="how-much-leverage-are-you-actually-taking-on">How much leverage are you actually taking on?</h2>
+
+<p>The deductibility framing can obscure the real risk. The Smith Manoeuvre is, mechanically, <em>leverage</em>. The honest question is: how leveraged am I against the portfolio I’m investing into?</p>
+
+<p>A useful ratio is total invested assets divided by net invested capital:</p>
+
+<ul>
+  <li>$400,000 portfolio, $100,000 of HELOC debt: $400,000 / ($400,000 − $100,000) = <strong>1.33x leverage</strong>.</li>
+  <li>$200,000 portfolio, $100,000 of HELOC debt: $200,000 / ($200,000 − $100,000) = <strong>2x leverage</strong>.</li>
+</ul>
+
+<p>The same $100,000 of HELOC debt is a very different risk profile against those two portfolios. The smaller the existing portfolio, the more aggressive the implicit leverage.</p>
+
+<h2 id="what-can-go-wrong">What can go wrong</h2>
+
+<ul>
+  <li>A market drawdown is amplified against the borrowed dollars.</li>
+  <li>HELOC rates are variable. Rising rates can coincide with falling markets, squeezing cash flow at the worst time.</li>
+  <li>HELOCs are callable. The lender can demand repayment.</li>
+  <li>Mingling personal and investment spending makes the debt harder to trace and can make part of the interest non-deductible.</li>
+</ul>
+
+<p>A worthwhile mental check: if the portfolio dropped 50% tomorrow and rates doubled, would the household still be fine?</p>
+
+<h2 id="why-it-fits-my-philosophy">Why it fits my philosophy</h2>
+
+<p>The Smith Manoeuvre fits because:</p>
+
+<ul>
+  <li>I already prefer <a href="/notes/portfolio-foundations">leverage over concentration</a> as the way to take on additional risk.</li>
+  <li>I expect a diversified equity portfolio to produce a higher long-term return than leaving additional equity in my home.</li>
+  <li>The deductibility makes the leverage materially cheaper after tax.</li>
+  <li>The investment side is <code class="language-plaintext highlighter-rouge">$XEQT</code>, which I’d want to own anyway.</li>
+</ul>
+
+<p>It does not fit when the household is not yet <a href="/notes/portfolio-foundations#sequencing">funding the basics</a>, or when the leverage ratio against the existing portfolio is uncomfortably high.</p>
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/notes/portfolio-foundations">Portfolio foundations</a></li>
+</ul>
+<hr class="pb-12" />
+</article>
+
+<footer>All of my notes are also available as an <a target="_blank" class="underline" href="/notes/rss.xml">RSS</a> feed.
+</footer>
+</div>
+</body>
+</html>
