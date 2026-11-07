@@ -619,6 +619,23 @@
       "performance": null
     },
     {
+      "hash": "55f5fc7eeeb4c479db8b90b06c54f08afb7fcd145525e737239c08930b7d3bce",
+      "familyHash": null,
+      "deckName": "Kubernetes Probes",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/kubernetes-probes.md",
+        "lineStart": 42,
+        "lineEnd": 46
+      },
+      "content": {
+        "basic": {
+          "question": "Why is `initialDelaySeconds: 0` safe on a `readinessProbe` but risky on a `livenessProbe`?",
+          "answer": "A failed readiness check only keeps the Pod out of endpoints. The kubelet keeps probing, so there is no deadline. A failed liveness check kills the container, so a slow starter gets only `failureThreshold × periodSeconds` (30s by default) before it is restarted. Use a `startupProbe` for slow starters."
+        }
+      },
+      "performance": null
+    },
+    {
       "hash": "5672d14f096246ea6f03716f0e558f913b671ad2e0787d4a3660206a550f540e",
       "familyHash": "b52c4b7550b47548f7e3628b03b6984de828219f55f3782be26c61233a4d54b5",
       "deckName": "Napkin Math: Cost",
@@ -789,6 +806,24 @@
       "performance": null
     },
     {
+      "hash": "73203e65133f40bda96c8a4cb5f7979cfe31087040d3c328522d456dcddd31d1",
+      "familyHash": "43737426d82150a0d60b0ef0392df5efcb20d9c13a38ea448352cfc2958bb343",
+      "deckName": "Kubernetes Probes",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/kubernetes-probes.md",
+        "lineStart": 25,
+        "lineEnd": 28
+      },
+      "content": {
+        "cloze": {
+          "text": "`successThreshold` must be `1` for liveness and startup probes.",
+          "start": 35,
+          "end": 54
+        }
+      },
+      "performance": null
+    },
+    {
       "hash": "734d378e71cb5684048fef3a16926af5a9bacea14ed3ddfaa36e4a4e8ac001cf",
       "familyHash": "ac2131958406f7f09a3f6c401b10d6ca4cbe829805c0bf303489cfec09ab7db7",
       "deckName": "Napkin Math: Cost",
@@ -931,6 +966,23 @@
       "performance": null
     },
     {
+      "hash": "8e868e66617a7495e38c648675f36782d9a9ff4c649bc4ef0b5733c533a16e95",
+      "familyHash": null,
+      "deckName": "Kubernetes Probes",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/kubernetes-probes.md",
+        "lineStart": 36,
+        "lineEnd": 40
+      },
+      "content": {
+        "basic": {
+          "question": "A `startupProbe` has `periodSeconds: 10` and `failureThreshold: 30`. How long can the app take to start?",
+          "answer": "300s (5 minutes). After that the container is killed."
+        }
+      },
+      "performance": null
+    },
+    {
       "hash": "8fee1b79d2715a047b739e801c59817ed210a986bb4a591a5989446862e8cc29",
       "familyHash": "b21ed399f1e995eeeba4c56fa7f2c9ae266083ce48140fb16bafa61ddf2388a4",
       "deckName": "Napkin Math: Cost",
@@ -1023,6 +1075,23 @@
           "text": "Operation: Blob Storage PUT 1 conn\n\nLatency: 50 ms",
           "start": 45,
           "end": 49
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "98e5213feb4ae73dabb6d520743409ce2b59964da3824dcd6000b97f93885522",
+      "familyHash": null,
+      "deckName": "Kubernetes Probes",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/kubernetes-probes.md",
+        "lineStart": 30,
+        "lineEnd": 34
+      },
+      "content": {
+        "basic": {
+          "question": "What are the four probe mechanisms, and when does `httpGet` count as success?",
+          "answer": "`exec`, `httpGet`, `tcpSocket`, `grpc`. Each probe uses exactly one. `httpGet` succeeds when `200 <= status < 400`."
         }
       },
       "performance": null
@@ -1316,6 +1385,23 @@
       "performance": null
     },
     {
+      "hash": "d1fe6eba42cfed951f7faeb695f859728ed15d2d979a0efc6ac5e4dd84e725d3",
+      "familyHash": null,
+      "deckName": "Kubernetes Probes",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/kubernetes-probes.md",
+        "lineStart": 1,
+        "lineEnd": 7
+      },
+      "content": {
+        "basic": {
+          "question": "What does a Kubernetes `startupProbe` do?",
+          "answer": "It holds off the other probes while the app boots. Liveness and readiness probes don't run until the startup probe succeeds once, and it doesn't run again after that. If it fails `failureThreshold` times in a row, the kubelet kills the container and `restartPolicy` decides what happens next.\n\nStartup budget: `initialDelaySeconds + failureThreshold × periodSeconds`"
+        }
+      },
+      "performance": null
+    },
+    {
       "hash": "d22265bb58c12179edf343ddac8822a6859b8bc30238a8cca11037ace4c351e0",
       "familyHash": "3dc6d59790f421c79882cee35b8b82d1ad0daa4c6c98077cd4fb1dc2e565adda",
       "deckName": "Napkin Math: Latency",
@@ -1383,6 +1469,40 @@
           "text": "Region: `eu-west-2`\n\nLocation: London",
           "start": 8,
           "end": 18
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "daa2be165c53a18c9847cf36d97dc098c45970f422fbac05627da76483a97b51",
+      "familyHash": null,
+      "deckName": "Kubernetes Probes",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/kubernetes-probes.md",
+        "lineStart": 9,
+        "lineEnd": 17
+      },
+      "content": {
+        "basic": {
+          "question": "What does a Kubernetes `readinessProbe` do?",
+          "answer": "**It decides whether the Pod gets traffic.**\n\n- On failure, the container is marked not Ready and the Pod IP is removed from matching Service EndpointSlices.\n- The container is **not** restarted.\n- It runs for the container's whole lifetime, so a Pod can go back and forth between Ready and not Ready."
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "dda78347329d97f1947cf2b6456d97e970a956eaaf84655037575ec7c63720e9",
+      "familyHash": null,
+      "deckName": "Kubernetes Probes",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/kubernetes-probes.md",
+        "lineStart": 19,
+        "lineEnd": 23
+      },
+      "content": {
+        "basic": {
+          "question": "What does a Kubernetes `livenessProbe` do?",
+          "answer": "It decides whether the container needs a restart. After `failureThreshold` consecutive failures, the kubelet kills the container and `restartPolicy` applies. It runs for the container's whole lifetime and doesn't wait for readiness. Only use it for states the app can't recover from on its own, like a deadlock."
         }
       },
       "performance": null
@@ -1724,6 +1844,23 @@
           "text": "Resource: Blob Writes (1M)\n\n$/month: $5",
           "start": 37,
           "end": 38
+        }
+      },
+      "performance": null
+    },
+    {
+      "hash": "fa353f85278a752446634b4f9ee0d4bae6aa756091a1f8e73b0757c1e72cc0ef",
+      "familyHash": null,
+      "deckName": "Kubernetes Probes",
+      "location": {
+        "filePath": "/Users/derek/src/github.com/derekstride/derekstride.github.io/flashcards/cards/kubernetes-probes.md",
+        "lineStart": 48,
+        "lineEnd": 50
+      },
+      "content": {
+        "basic": {
+          "question": "What is a common pattern for using liveness and readiness probes together?",
+          "answer": "Point both at the same cheap endpoint, but give liveness a higher `failureThreshold`. The Pod then stops getting traffic before it gets killed."
         }
       },
       "performance": null
