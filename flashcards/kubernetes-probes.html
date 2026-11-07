@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kubernetes Probes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:site_name" content="derekstride">
+  <meta property="og:description" content="This is the personal website of Derek Stride.
+">
+  <meta property="og:title" content="Kubernetes Probes">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta rel="author" href="derekstride">
+  <meta rel="publisher" href="derekstride">
+
+  <link rel="stylesheet" href="/assets/css/bundle.css" /><link rel="canonical" href="https://derek.stride.host/flashcards/kubernetes-probes" /><link rel="alternate" type="application/rss+xml" title="derekstride" href="/rss.xml">
+</head>
+<body class="py-8">
+  <div class="md:container mx-auto px-8"><nav><a class="text-xl text-gray-500 hover:text-gray-900" href="/flashcards">Flashcards</a></nav><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+
+<article class="max-w-none">
+  <h1 class="pt-8 text-3xl font-bold text-gray-900">Kubernetes Probes</h1>
+  
+
+  <div class="flashcard-deck space-y-6 mt-8">
+    
+    
+      
+        <div class="flashcard block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+             data-controller="flashcard">
+          <h5 class="question mb-6 text-2xl font-semibold tracking-tight text-gray-900 leading-8">
+            <p>Why is <code class="language-plaintext highlighter-rouge">initialDelaySeconds: 0</code> safe on a <code class="language-plaintext highlighter-rouge">readinessProbe</code> but risky on a <code class="language-plaintext highlighter-rouge">livenessProbe</code>?</p>
+
+          </h5>
+          <div style="text-align: right; margin-top: 1.5rem;">
+            <button data-flashcard-target="button"
+                    data-action="click->flashcard#showAnswer"
+                    class="inline-flex items-center px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none shadow-sm">
+              Show Answer
+            </button>
+          </div>
+          <div data-flashcard-target="answer" class="hidden mt-4 pt-4 text-gray-600">
+            <p>A failed readiness check only keeps the Pod out of endpoints. The kubelet keeps probing, so there is no deadline. A failed liveness check kills the container, so a slow starter gets only <code class="language-plaintext highlighter-rouge">failureThreshold × periodSeconds</code> (30s by default) before it is restarted. Use a <code class="language-plaintext highlighter-rouge">startupProbe</code> for slow starters.</p>
+
+          </div>
+        </div>
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="flashcard block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+             data-controller="flashcard">
+          <p class="whitespace-pre-wrap text-base m-0 text-gray-600 leading-relaxed">`successThreshold` must be `1` for <span
+            data-flashcard-target="cloze"
+            data-action="click->flashcard#reveal"
+            class="cloze-hidden cursor-pointer px-1.5 py-0.5 rounded">liveness and startup</span> probes.</p>
+        </div>
+
+      
+    
+      
+        <div class="flashcard block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+             data-controller="flashcard">
+          <h5 class="question mb-6 text-2xl font-semibold tracking-tight text-gray-900 leading-8">
+            <p>A <code class="language-plaintext highlighter-rouge">startupProbe</code> has <code class="language-plaintext highlighter-rouge">periodSeconds: 10</code> and <code class="language-plaintext highlighter-rouge">failureThreshold: 30</code>. How long can the app take to start?</p>
+
+          </h5>
+          <div style="text-align: right; margin-top: 1.5rem;">
+            <button data-flashcard-target="button"
+                    data-action="click->flashcard#showAnswer"
+                    class="inline-flex items-center px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none shadow-sm">
+              Show Answer
+            </button>
+          </div>
+          <div data-flashcard-target="answer" class="hidden mt-4 pt-4 text-gray-600">
+            <p>300s (5 minutes). After that the container is killed.</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="flashcard block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+             data-controller="flashcard">
+          <h5 class="question mb-6 text-2xl font-semibold tracking-tight text-gray-900 leading-8">
+            <p>What are the four probe mechanisms, and when does <code class="language-plaintext highlighter-rouge">httpGet</code> count as success?</p>
+
+          </h5>
+          <div style="text-align: right; margin-top: 1.5rem;">
+            <button data-flashcard-target="button"
+                    data-action="click->flashcard#showAnswer"
+                    class="inline-flex items-center px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none shadow-sm">
+              Show Answer
+            </button>
+          </div>
+          <div data-flashcard-target="answer" class="hidden mt-4 pt-4 text-gray-600">
+            <p><code class="language-plaintext highlighter-rouge">exec</code>, <code class="language-plaintext highlighter-rouge">httpGet</code>, <code class="language-plaintext highlighter-rouge">tcpSocket</code>, <code class="language-plaintext highlighter-rouge">grpc</code>. Each probe uses exactly one. <code class="language-plaintext highlighter-rouge">httpGet</code> succeeds when <code class="language-plaintext highlighter-rouge">200 &lt;= status &lt; 400</code>.</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="flashcard block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+             data-controller="flashcard">
+          <h5 class="question mb-6 text-2xl font-semibold tracking-tight text-gray-900 leading-8">
+            <p>What does a Kubernetes <code class="language-plaintext highlighter-rouge">startupProbe</code> do?</p>
+
+          </h5>
+          <div style="text-align: right; margin-top: 1.5rem;">
+            <button data-flashcard-target="button"
+                    data-action="click->flashcard#showAnswer"
+                    class="inline-flex items-center px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none shadow-sm">
+              Show Answer
+            </button>
+          </div>
+          <div data-flashcard-target="answer" class="hidden mt-4 pt-4 text-gray-600">
+            <p>It holds off the other probes while the app boots. Liveness and readiness probes don’t run until the startup probe succeeds once, and it doesn’t run again after that. If it fails <code class="language-plaintext highlighter-rouge">failureThreshold</code> times in a row, the kubelet kills the container and <code class="language-plaintext highlighter-rouge">restartPolicy</code> decides what happens next.</p>
+
+<p>Startup budget: <code class="language-plaintext highlighter-rouge">initialDelaySeconds + failureThreshold × periodSeconds</code></p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="flashcard block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+             data-controller="flashcard">
+          <h5 class="question mb-6 text-2xl font-semibold tracking-tight text-gray-900 leading-8">
+            <p>What does a Kubernetes <code class="language-plaintext highlighter-rouge">readinessProbe</code> do?</p>
+
+          </h5>
+          <div style="text-align: right; margin-top: 1.5rem;">
+            <button data-flashcard-target="button"
+                    data-action="click->flashcard#showAnswer"
+                    class="inline-flex items-center px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none shadow-sm">
+              Show Answer
+            </button>
+          </div>
+          <div data-flashcard-target="answer" class="hidden mt-4 pt-4 text-gray-600">
+            <p><strong>It decides whether the Pod gets traffic.</strong></p>
+
+<ul>
+  <li>On failure, the container is marked not Ready and the Pod IP is removed from matching Service EndpointSlices.</li>
+  <li>The container is <strong>not</strong> restarted.</li>
+  <li>It runs for the container’s whole lifetime, so a Pod can go back and forth between Ready and not Ready.</li>
+</ul>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="flashcard block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+             data-controller="flashcard">
+          <h5 class="question mb-6 text-2xl font-semibold tracking-tight text-gray-900 leading-8">
+            <p>What does a Kubernetes <code class="language-plaintext highlighter-rouge">livenessProbe</code> do?</p>
+
+          </h5>
+          <div style="text-align: right; margin-top: 1.5rem;">
+            <button data-flashcard-target="button"
+                    data-action="click->flashcard#showAnswer"
+                    class="inline-flex items-center px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none shadow-sm">
+              Show Answer
+            </button>
+          </div>
+          <div data-flashcard-target="answer" class="hidden mt-4 pt-4 text-gray-600">
+            <p>It decides whether the container needs a restart. After <code class="language-plaintext highlighter-rouge">failureThreshold</code> consecutive failures, the kubelet kills the container and <code class="language-plaintext highlighter-rouge">restartPolicy</code> applies. It runs for the container’s whole lifetime and doesn’t wait for readiness. Only use it for states the app can’t recover from on its own, like a deadlock.</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="flashcard block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+             data-controller="flashcard">
+          <h5 class="question mb-6 text-2xl font-semibold tracking-tight text-gray-900 leading-8">
+            <p>What is a common pattern for using liveness and readiness probes together?</p>
+
+          </h5>
+          <div style="text-align: right; margin-top: 1.5rem;">
+            <button data-flashcard-target="button"
+                    data-action="click->flashcard#showAnswer"
+                    class="inline-flex items-center px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none shadow-sm">
+              Show Answer
+            </button>
+          </div>
+          <div data-flashcard-target="answer" class="hidden mt-4 pt-4 text-gray-600">
+            <p>Point both at the same cheap endpoint, but give liveness a higher <code class="language-plaintext highlighter-rouge">failureThreshold</code>. The Pod then stops getting traffic before it gets killed.</p>
+
+          </div>
+        </div>
+      
+    
+  </div>
+
+  <hr class="pb-12 mt-8" />
+</article>
+
+<script type="module" src="/assets/js/application.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.querySelector('.flashcard-deck'), {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}]});"></script>
+
+<style>
+  .cloze-hidden {
+    background-color: #374151;
+    color: #374151;
+    transition: all 0.2s ease;
+    border: 1px solid #4b5563;
+    border-radius: 0.25rem;
+  }
+  .cloze-hidden:hover {
+    background-color: #4b5563;
+    color: #4b5563;
+    border-color: #6b7280;
+  }
+  .cloze-revealed {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+    border-radius: 0.25rem;
+  }
+</style>
+</div>
+</body>
+</html>
